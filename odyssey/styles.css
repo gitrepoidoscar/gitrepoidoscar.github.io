@@ -819,6 +819,60 @@ ul { list-style: none; }
     font-style: italic;
 }
 
+/* ─── STYLISH IMAGE CREDITS & SOURCE ATTRIBUTION ─── */
+.image-credit {
+    position: absolute;
+    bottom: 14px;
+    right: 18px;
+    z-index: 3;
+    font-family: var(--font-ui);
+    font-size: 0.62rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
+    background: rgba(18, 16, 14, 0.55);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    pointer-events: none;
+    transition: all 0.3s var(--ease);
+}
+.chapter-hero:hover .image-credit,
+#hero:hover .image-credit {
+    color: #fff;
+    background: rgba(18, 16, 14, 0.8);
+    border-color: var(--gold);
+}
+#hero .image-credit {
+    bottom: 24px;
+    right: 24px;
+}
+.image-credit-art {
+    margin-top: 8px;
+    font-family: var(--font-ui);
+    font-size: 0.72rem;
+    font-style: italic;
+    color: var(--ink-muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 0.02em;
+}
+.image-credit-art::before {
+    content: '◈';
+    font-size: 0.6rem;
+    color: var(--gold);
+    font-style: normal;
+}
+.map-container .image-credit-art {
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 /* ─── MUSIC BOX ─── */
 .music-box {
     background: rgba(26, 23, 20, 0.04);
