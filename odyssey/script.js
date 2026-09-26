@@ -50,46 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ─── SCROLL REVEAL ANIMATIONS ───
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px 0px -80px 0px',
-        threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry, index) => {
-            if (entry.isIntersecting) {
-                // Stagger animations within the same parent
-                const siblings = entry.target.parentElement.querySelectorAll(':scope > *');
-                let delay = 0;
-                siblings.forEach((sibling) => {
-                    if (sibling === entry.target) {
-                        entry.target.style.transitionDelay = delay + 'ms';
-                    }
-                });
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    // Observe animatable elements
-    const animatableSelectors = [
-        '.chapter-body > *',
-        '.intro-card',
-        '.pattern-card',
-        '.attn-item',
-        '.stage',
-        '.gallery-item'
-    ];
-    animatableSelectors.forEach(selector => {
-        document.querySelectorAll(selector).forEach((el, i) => {
-            el.style.transitionDelay = (i % 4) * 80 + 'ms';
-            observer.observe(el);
-        });
-    });
-
     // ─── SMOOTH SCROLL FOR NAV LINKS ───
     document.querySelectorAll('a[href^="#"]').forEach(link => {
         link.addEventListener('click', (e) => {

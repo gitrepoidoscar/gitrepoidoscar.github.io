@@ -32,12 +32,12 @@
     --font-ui:       'Inter', sans-serif;
 
     /* Spacing */
-    --space-xs:   0.5rem;
-    --space-sm:   1rem;
-    --space-md:   2rem;
-    --space-lg:   3rem;
-    --space-xl:   5rem;
-    --space-xxl:  8rem;
+    --space-xs:   0.4rem;
+    --space-sm:   0.85rem;
+    --space-md:   1.5rem;
+    --space-lg:   2.25rem;
+    --space-xl:   3.25rem;
+    --space-xxl:  4.5rem;
 
     /* Transitions */
     --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -482,7 +482,7 @@ ul { list-style: none; }
 
 /* ─── VIDEO ─── */
 .video-feature {
-    margin: var(--space-lg) 0;
+    margin: var(--space-md) 0;
 }
 .video-title {
     font-family: var(--font-heading);
@@ -633,9 +633,9 @@ ul { list-style: none; }
 }
 .chapter-hero {
     position: relative;
-    height: 60vh;
-    min-height: 400px;
-    max-height: 600px;
+    height: 48vh;
+    min-height: 320px;
+    max-height: 480px;
     overflow: hidden;
 }
 .chapter-hero-img {
@@ -665,7 +665,7 @@ ul { list-style: none; }
     bottom: 0;
     left: 0;
     right: 0;
-    padding: var(--space-lg) var(--space-md);
+    padding: var(--space-md) var(--space-md);
     max-width: 780px;
     margin: 0 auto;
     color: #fff;
@@ -696,15 +696,15 @@ ul { list-style: none; }
 
 /* Chapter body */
 .chapter-body {
-    padding-top: var(--space-lg);
-    padding-bottom: var(--space-xxl);
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-lg);
     background: var(--cream);
 }
 .chapter-alt .chapter-body {
     background: var(--parchment);
 }
 .chapter-body p {
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm);
 }
 
 /* ─── INSIGHT BOX ─── */
@@ -713,7 +713,7 @@ ul { list-style: none; }
     border-left: 4px solid var(--gold);
     border-radius: 0 12px 12px 0;
     padding: var(--space-md) var(--space-lg);
-    margin: var(--space-lg) 0;
+    margin: var(--space-md) 0;
 }
 .insight-box h4 {
     font-family: var(--font-display);
@@ -732,7 +732,7 @@ ul { list-style: none; }
     border-left: 4px solid var(--wine);
     border-radius: 0 12px 12px 0;
     padding: var(--space-md) var(--space-lg);
-    margin: var(--space-lg) 0;
+    margin: var(--space-md) 0;
 }
 .theology-note h4 {
     font-family: var(--font-display);
@@ -747,7 +747,7 @@ ul { list-style: none; }
     border: 1px solid rgba(44,95,124,0.2);
     border-radius: 12px;
     padding: var(--space-md) var(--space-lg);
-    margin: var(--space-lg) 0;
+    margin: var(--space-md) 0;
     text-align: center;
 }
 .reflection-question h4 {
@@ -769,7 +769,7 @@ ul { list-style: none; }
     background: var(--parchment-warm);
     border-radius: 12px;
     padding: var(--space-md) var(--space-lg);
-    margin: var(--space-lg) 0;
+    margin: var(--space-md) 0;
     border: 1px solid rgba(197,165,90,0.2);
 }
 .chapter-alt .art-callout {
@@ -824,7 +824,7 @@ ul { list-style: none; }
     background: rgba(26, 23, 20, 0.04);
     border-radius: 12px;
     padding: var(--space-md) var(--space-lg);
-    margin: var(--space-lg) 0;
+    margin: var(--space-md) 0;
 }
 .music-box h4 {
     font-family: var(--font-display);
@@ -1300,24 +1300,9 @@ footer {
 }
 
 /* ─── SCROLL ANIMATIONS ─── */
-.chapter-body > *,
-.insight-box,
-.reflection-question,
-.art-callout,
-.music-box,
-.video-feature,
-.theology-note,
-.intro-card,
-.pattern-card,
-.attn-item,
+/* Content is always fully visible by default so no blank spaces occur */
 .stage {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
-}
-.visible {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
+    transition: transform 0.4s var(--ease);
 }
 
 /* ─── RESPONSIVE ─── */
