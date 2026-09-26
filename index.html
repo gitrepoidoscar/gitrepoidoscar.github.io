@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Odyssey — A School of Homecoming</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cinzel:wght@400;500;600;700;800;900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- NAVIGATION -->
+<!-- ═══════════════════════════════════════════════ -->
+<nav id="main-nav">
+    <div class="nav-inner">
+        <a href="#hero" class="nav-logo">ΟΔΥΣΣΕΙΑ</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.getElementById('main-nav').classList.toggle('open')">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#prologue">Prologue</a></li>
+            <li><a href="#map">The Journey</a></li>
+            <li class="dropdown">
+                <a href="#chapters">Chapters ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#telemachus">I. Telemachus</a></li>
+                    <li><a href="#calypso">II. Calypso</a></li>
+                    <li><a href="#nausicaa">III. Nausicaa</a></li>
+                    <li><a href="#lotus">IV. Lotus-Eaters</a></li>
+                    <li><a href="#polyphemus">V. Polyphemus</a></li>
+                    <li><a href="#aeolus">VI. Aeolus</a></li>
+                    <li><a href="#circe">VII. Circe</a></li>
+                    <li><a href="#underworld">VIII. Underworld</a></li>
+                    <li><a href="#sirens">IX. Sirens</a></li>
+                    <li><a href="#scylla">X. Scylla</a></li>
+                    <li><a href="#helios">XI. Helios</a></li>
+                    <li><a href="#return">XII. The Return</a></li>
+                    <li><a href="#penelope">XIII. Penelope</a></li>
+                    <li><a href="#ending">XIV. The Ending</a></li>
+                </ul>
+            </li>
+            <li><a href="#deep-pattern">Deep Pattern</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Reading Progress Bar -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- RIGHT-SIDE CHAPTER NAVIGATION -->
+<!-- ═══════════════════════════════════════════════ -->
+<aside id="chapter-nav" class="chapter-nav" aria-label="Chapter navigation">
+    <div class="chapter-nav-track">
+        <a href="#prologue" class="chapter-nav-item active" data-section="prologue">
+            <span class="chapter-nav-dot"></span>
+            <span class="chapter-nav-label">Prologue</span>
+        </a>
+        <a href="#telemachus" class="chapter-nav-item" data-section="telemachus">
+            <span class="chapter-nav-dot"></span>
+            <span class="chapter-nav-label">I · Telemachus</span>
+        </a>
+        <a href="#calypso" class="chapter-nav-item" data-section="calypso">
+            <span class="chapter-nav-dot"></span>
+            <span class="chapter-nav-label">II · Calypso</span>
+        </a>
+        <a href="#nausicaa" class="chapter-nav-item" data-section="nausicaa">
+            <span class="chapter-nav-dot"></span>
+            <span class="chapter-nav-label">III · Nausicaa</span>
+        </a>
+        <a href="#lotus" class="chapter-nav-item" data-section="lotus">
+            <span class="chapter-nav-dot"></span>
+            <span class="chapter-nav-label">IV · Lotus-Eaters</span>
+        </a>
+        <a href="#polyphemus" class="chapter-nav-item" data-section="polyphemus">
+            <span class="chapter-nav-dot"></span>
+            <span class="chapter-nav-label">V · Polyphemus</span>
+        </a>
+        <a href="#aeolus" class="chapter-nav-item" data-section="aeolus">
+            <span class="chapter-nav-dot"></span>
+            <span class="chapter-nav-label">VI · Aeolus</span>
+        </a>
+        <a href="#circe" class="chapter-nav-item" data-section="circe">
+            <span class="chapter-nav-dot"></span>
+            <span class="chapter-nav-label">VII · Circe</span>
+        </a>
+        <a href="#underworld" class="chapter-nav-item" data-section="underworld">
+            <span class="chapter-nav-dot"></span>
+            <span class="chapter-nav-label">VIII · Underworld</span>
+        </a>
+        <a href="#sirens" class="chapter-nav-item" data-section="sirens">
+            <span class="chapter-nav-dot"></span>
+            <span class="chapter-nav-label">IX · Sirens</span>
+        </a>
+        <a href="#scylla" class="chapter-nav-item" data-section="scylla">
+            <span class="chapter-nav-dot"></span>
+            <span class="chapter-nav-label">X · Scylla</span>
+        </a>
+        <a href="#helios" class="chapter-nav-item" data-section="helios">
+            <span class="chapter-nav-dot"></span>
+            <span class="chapter-nav-label">XI · Helios</span>
+        </a>
+        <a href="#return" class="chapter-nav-item" data-section="return">
+            <span class="chapter-nav-dot"></span>
+            <span class="chapter-nav-label">XII · Return</span>
+        </a>
+        <a href="#penelope" class="chapter-nav-item" data-section="penelope">
+            <span class="chapter-nav-dot"></span>
+            <span class="chapter-nav-label">XIII · Penelope</span>
+        </a>
+        <a href="#ending" class="chapter-nav-item" data-section="ending">
+            <span class="chapter-nav-dot"></span>
+            <span class="chapter-nav-label">XIV · Ending</span>
+        </a>
+        <a href="#deep-pattern" class="chapter-nav-item" data-section="deep-pattern">
+            <span class="chapter-nav-dot"></span>
+            <span class="chapter-nav-label">Deep Pattern</span>
+        </a>
+    </div>
+</aside>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- HERO -->
+<!-- ═══════════════════════════════════════════════ -->
+<header id="hero">
+    <div class="hero-overlay"></div>
+    <img src="images/hero-banner.jpg" alt="Odysseus at the prow of his ship" class="hero-img">
+    <div class="hero-content">
+        <p class="hero-eyebrow">Homer's Epic Poem · c. 8th Century BCE</p>
+        <h1 class="hero-title">The Odyssey</h1>
+        <p class="hero-subtitle">A School of Homecoming</p>
+        <p class="hero-tagline">Deep Patterns in Religion, Spirituality, Art, Music &amp; Human Understanding</p>
+        <a href="#prologue" class="hero-cta">Begin the Journey ↓</a>
+    </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- PROLOGUE -->
+<!-- ═══════════════════════════════════════════════ -->
+<section id="prologue" class="section section-dark">
+    <div class="container narrow">
+        <span class="section-label">Introduction</span>
+        <h2 class="section-title">Before We Begin</h2>
+        <div class="dropcap-text">
+            <p><span class="dropcap">T</span>he Odyssey is, on the surface, the story of one man's journey home from war. But beneath that surface lies something far more extraordinary — a map of the human soul navigating every force that can make us forget who we are and where we belong.</p>
+            <p>Written nearly three thousand years ago, Homer's epic remains startlingly alive because its events are specific, but its <em>relations</em> are portable. Every challenge Odysseus faces — from enchantresses to monsters, from beautiful prisons to deadly songs — mirrors something we still encounter in our own lives.</p>
+        </div>
+
+        <blockquote class="pullquote">
+            <p>The opposite of being lost is not knowing exactly where you are.<br>
+            <strong>The opposite of being lost is still knowing what you are trying to return to.</strong></p>
+        </blockquote>
+
+        <div class="intro-grid">
+            <div class="intro-card">
+                <div class="intro-icon">🏛️</div>
+                <h3>What You'll Discover</h3>
+                <p>Fourteen chapters exploring every major episode of the Odyssey — told accessibly, analyzed deeply, and connected to art, music, and questions that still matter today.</p>
+            </div>
+            <div class="intro-card">
+                <div class="intro-icon">🎨</div>
+                <h3>Art & Music</h3>
+                <p>Paintings by Waterhouse, Turner, and new artworks illuminate each episode. Classical music by Debussy, Beethoven, Mozart, and Monteverdi accompany the journey.</p>
+            </div>
+            <div class="intro-card">
+                <div class="intro-icon">💡</div>
+                <h3>Deep Questions</h3>
+                <p>Each chapter ends with a question designed to connect Homer's ancient wisdom to your own life — not as homework, but as genuine invitation.</p>
+            </div>
+        </div>
+
+        <!-- Introductory Video -->
+        <div class="video-feature">
+            <h3 class="video-title">🎬 Watch: The Odyssey — An Introduction</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/8Z9FQxcCAZ0" title="Everything you need to know to read Homer's Odyssey — TED-Ed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <p class="video-caption">A beautiful overview of Homer's epic and why it still matters after nearly 3,000 years.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- THE JOURNEY MAP -->
+<!-- ═══════════════════════════════════════════════ -->
+<section id="map" class="section section-light">
+    <div class="container">
+        <span class="section-label">The Voyage</span>
+        <h2 class="section-title">The Journey of Odysseus</h2>
+        <p class="section-intro">From the smoldering ruins of Troy across the wine-dark sea, Odysseus' path home to Ithaca wound through ten years of wonders and terrors. Each stop tested a different dimension of his humanity.</p>
+        <div class="map-container">
+            <img src="images/journey-map.jpg" alt="Map of Odysseus' journey across the Mediterranean" class="journey-map" loading="lazy">
+        </div>
+
+        <!-- Journey Timeline -->
+        <div class="timeline">
+            <div class="timeline-item" data-chapter="telemachus"><span class="timeline-dot"></span><span class="timeline-label">Ithaca — Telemachus Awakens</span></div>
+            <div class="timeline-item" data-chapter="calypso"><span class="timeline-dot"></span><span class="timeline-label">Ogygia — Calypso's Island</span></div>
+            <div class="timeline-item" data-chapter="nausicaa"><span class="timeline-dot"></span><span class="timeline-label">Scheria — The Phaeacians</span></div>
+            <div class="timeline-item" data-chapter="lotus"><span class="timeline-dot"></span><span class="timeline-label">Cicones & Lotus-Eaters</span></div>
+            <div class="timeline-item" data-chapter="polyphemus"><span class="timeline-dot"></span><span class="timeline-label">Sicily — The Cyclops Cave</span></div>
+            <div class="timeline-item" data-chapter="aeolus"><span class="timeline-dot"></span><span class="timeline-label">Aeolus & Laestrygonians</span></div>
+            <div class="timeline-item" data-chapter="circe"><span class="timeline-dot"></span><span class="timeline-label">Aeaea — Circe's Island</span></div>
+            <div class="timeline-item" data-chapter="underworld"><span class="timeline-dot"></span><span class="timeline-label">The Underworld</span></div>
+            <div class="timeline-item" data-chapter="sirens"><span class="timeline-dot"></span><span class="timeline-label">The Sirens' Rock</span></div>
+            <div class="timeline-item" data-chapter="scylla"><span class="timeline-dot"></span><span class="timeline-label">Scylla & Charybdis</span></div>
+            <div class="timeline-item" data-chapter="helios"><span class="timeline-dot"></span><span class="timeline-label">Thrinacia — Helios' Cattle</span></div>
+            <div class="timeline-item" data-chapter="return"><span class="timeline-dot"></span><span class="timeline-label">Return to Ithaca</span></div>
+            <div class="timeline-item" data-chapter="penelope"><span class="timeline-dot"></span><span class="timeline-label">The Bow & The Bed</span></div>
+            <div class="timeline-item" data-chapter="ending"><span class="timeline-dot"></span><span class="timeline-label">Peace at Last</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- THE DEEP STRUCTURE -->
+<!-- ═══════════════════════════════════════════════ -->
+<section class="section section-accent">
+    <div class="container narrow">
+        <span class="section-label">The Hidden Architecture</span>
+        <h2 class="section-title">One Question Drives the Entire Epic</h2>
+        <div class="big-question">
+            <p>How can a human being preserve orientation toward a distant good while immediate circumstances continuously distort perception and desire?</p>
+        </div>
+        <p class="centered-text">That single question explains an extraordinary amount of the poem. <em>Nostos</em> — homecoming — is the governing force. Ithaca exists in Odysseus' mind long before it exists again beneath his feet. Every obstacle, from Calypso to the Sirens, interferes with that orientation in a different way.</p>
+
+        <div class="pattern-grid">
+            <div class="pattern-card">
+                <h4>🧭 Memory as Navigation</h4>
+                <p>The Lotus-Eaters erase the desire for home. The Underworld restores it through ancestral memory. Argos recognizes continuity across time.</p>
+            </div>
+            <div class="pattern-card">
+                <h4>🤝 Hospitality as Civilization Test</h4>
+                <p>Polyphemus consumes guests. The suitors consume their host. The Phaeacians restore a stranger before knowing his name.</p>
+            </div>
+            <div class="pattern-card">
+                <h4>🧠 Cunning vs. Wisdom</h4>
+                <p>"Nobody" saves Odysseus from the Cyclops. Then his ego nearly undoes everything. Problem-solving intelligence is not the same as self-mastery.</p>
+            </div>
+            <div class="pattern-card">
+                <h4>🔐 Recognition as Authentication</h4>
+                <p>Behavior, memories, scars, the bow, and the secret of the bed — increasingly difficult-to-fake signals prove identity.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- CHAPTERS BEGIN -->
+<!-- ═══════════════════════════════════════════════ -->
+<div id="chapters">
+
+<!-- ——————————————————— CHAPTER I: TELEMACHUS ——————————————————— -->
+<section id="telemachus" class="chapter">
+    <div class="chapter-hero">
+        <img src="images/telemachus.jpg" alt="Telemachus alone in the hall" class="chapter-hero-img" loading="lazy">
+        <div class="chapter-hero-overlay"></div>
+        <div class="chapter-hero-text">
+            <span class="chapter-number">Chapter I</span>
+            <h2 class="chapter-title">Telemachus: The Absent Center</h2>
+            <p class="chapter-subtitle">Books 1–4 · The hero is missing, and a son must awaken</p>
+        </div>
+    </div>
+    <div class="container narrow chapter-body">
+        <div class="dropcap-text">
+            <p><span class="dropcap">T</span>he Odyssey begins not with Odysseus, but with his absence. For twenty years — ten at Troy, ten more lost at sea — the king of Ithaca has been gone. In his palace, over a hundred suitors feast on his wealth, court his wife Penelope, and plan to kill his son Telemachus.</p>
+            <p>It is Athena, goddess of wisdom, who arrives disguised as a traveler to awaken something in the young prince. She doesn't fight the suitors for him. She doesn't reveal the future. She simply asks a question that ignites his will: <em>"Are you truly the son of Odysseus?"</em></p>
+        </div>
+
+        <div class="insight-box">
+            <h4>🔮 The Spiritual Pattern</h4>
+            <p>Before "the father" can return externally, something must mature internally. Telemachus represents the moment when <strong>waiting becomes vocation</strong>. One can inherit a crisis without having caused it, yet eventually become responsible for responding to it.</p>
+            <p>This resembles the grammar of <em>calling</em> — summons does not substitute for human agency but awakens it.</p>
+        </div>
+
+        <div class="reflection-question">
+            <h4>💭 Deep Question</h4>
+            <p><em>Where in my life am I waiting for the return of something whose absence now requires me to mature?</em></p>
+        </div>
+
+        <div class="art-callout">
+            <h4>🎨 In Art: Penelope and the Suitors</h4>
+            <div class="art-embed" onclick="openLightbox(this)">
+                <img src="images/art-penelope.jpg" alt="Penelope and the Suitors — inspired by Waterhouse" loading="lazy">
+            </div>
+            <p class="art-description"><strong>Inspired by John William Waterhouse</strong> — <em>Penelope and the Suitors</em> (1912). Waterhouse captures the tension of a household under siege: Penelope sits at her loom on the upper level, weaving by day and unraveling by night — a strategy of quiet resistance. Below, the suitors feast and carouse recklessly in Odysseus' own hall, consuming his wealth and disgracing his home. The painting's split composition mirrors the split in Ithaca itself: patience and intelligence above, appetite and arrogance below.</p>
+        </div>
+
+        <div class="music-box">
+            <h4>🎵 Listening Laboratory</h4>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Beethoven</strong> — Egmont Overture <span class="tag">resonance</span>
+                    <p class="music-why">Beethoven wrote this for Goethe's play about a hero who resists tyranny. The overture builds from oppressive darkness to blazing triumph &mdash; mirroring Telemachus' journey from helplessness to agency.</p>
+                </div>
+                <div class="music-video-mini">
+                    <iframe src="https://www.youtube.com/embed/vWmiP7rdRBg" title="Beethoven — Egmont Overture" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Mozart</strong> — Symphony No. 25 in G minor <span class="tag">resonance</span>
+                    <p class="music-why">Mozart was only 17 when he wrote this urgent, driven symphony. Its youthful intensity mirrors Telemachus &mdash; a young man confronting a crisis he didn't create, searching for the father he barely remembers.</p>
+                </div>
+                <div class="music-video-mini">
+                    <iframe src="https://www.youtube.com/embed/ojDuSz7YxTw" title="Mozart — Symphony No. 25 in G minor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Faur&eacute;</strong> — <em>P&eacute;n&eacute;lope</em> <span class="tag tag-primary">direct reception</span>
+                    <p class="music-why">Faur&eacute;'s opera (1907&ndash;12) is a <strong>direct adaptation</strong> of the Odyssey. The hero's wife becomes the protagonist whose faithfulness and intelligence carry the drama.</p>
+                </div>
+                <div class="music-video-mini">
+                    <iframe src="https://www.youtube.com/embed/nonZSpHcJFw" title="Faur&eacute; — Penelope" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Mozart</strong> — Symphony No. 25 in G minor <span class="tag">resonance</span>
+                    <p class="music-why">Mozart was only 17 when he wrote this urgent, driven symphony. Its youthful intensity and minor-key restlessness mirror Telemachus — a young man confronting a crisis he didn't create, searching for the father he barely remembers.</p>
+                </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Fauré</strong> — <em>Pénélope</em> <span class="tag tag-primary">direct reception</span>
+                    <p class="music-why">Fauré's opera (1907–12) is a <strong>direct adaptation</strong> of the Odyssey, centering Penelope's consciousness. It represents one of the great shifts in Odyssean reception: the hero's wife is no longer merely "the destination" but becomes the protagonist whose faithfulness and intelligence carry the drama.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-feature">
+            <h3 class="video-title">🎬 Watch: The Odyssey — Crash Course Literature</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/MS4jk5kavy4" title="The Odyssey: Crash Course Literature — John Green" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ——————————————————— CHAPTER II: CALYPSO ——————————————————— -->
+<section id="calypso" class="chapter chapter-alt">
+    <div class="chapter-hero">
+        <img src="images/calypso.jpg" alt="Classics Summarized: The Odyssey — Overly Sarcastic Productions on the island" class="chapter-hero-img" loading="lazy">
+        <div class="chapter-hero-overlay"></div>
+        <div class="chapter-hero-text">
+            <span class="chapter-number">Chapter II</span>
+            <h2 class="chapter-title">Calypso: The Beautiful Prison</h2>
+            <p class="chapter-subtitle">Book 5 · Paradise that holds you captive</p>
+        </div>
+    </div>
+    <div class="container narrow chapter-body">
+        <div class="dropcap-text">
+            <p><span class="dropcap">C</span>alypso, whose name means "she who conceals," offers Odysseus something most humans would consider the ultimate prize: eternal life on a paradise island with a goddess who loves him. Crystal waters, exotic flowers, freedom from aging and death.</p>
+            <p>And yet, every day, Odysseus sits on the shore and weeps. He gazes across the empty sea toward an island he cannot see, longing for a mortal wife and a rocky kingdom that will never match this splendor. The obstacle here is not horror — it is <em>protected suspension</em>.</p>
+        </div>
+
+        <blockquote class="pullquote">
+            <p>Some prisons hurt. Others satisfy.<br>The latter may be harder to leave.</p>
+        </blockquote>
+
+        <div class="insight-box">
+            <h4>🔮 The Spiritual Pattern</h4>
+            <p>Calypso asks a question that cuts deep: <strong>can a life be pleasant and nevertheless be false to one's deeper orientation?</strong></p>
+            <p>In systems thinking, Calypso represents a <em>local optimum</em> — a stable, satisfying solution that prevents movement toward a larger objective. Think of a comfortable job that prevents you from pursuing your true calling, or a relationship that feels safe but leaves your soul untouched.</p>
+        </div>
+
+        <div class="theology-note">
+            <h4>⛪ A Theological Tension</h4>
+            <p>Christianity values eternal life, yet Odysseus <em>rejects</em> a form of escape from mortal belonging. These ideas should not be collapsed. Their juxtaposition produces a stronger question: <strong>What sort of eternity would actually count as fulfillment? Mere endless continuation? Or completed communion?</strong></p>
+        </div>
+
+        <div class="reflection-question">
+            <h4>💭 Deep Question</h4>
+            <p><em>What in my life is comfortable enough to be invisible as a cage?</em></p>
+        </div>
+
+        <div class="music-box">
+            <h4>🎵 Listening Laboratory</h4>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Mozart</strong> — Clarinet Concerto, Adagio <span class="tag">resonance</span>
+                    <p class="music-why">Widely considered the most beautiful slow movement ever written. The clarinet's warm voice sings of acceptance tinged with sorrow &mdash; Odysseus weeping on a paradise shore, longing for a mortal home he chose over immortality.</p>
+                </div>
+                <div class="music-video-mini">
+                    <iframe src="https://www.youtube.com/embed/VpDq4Wu2f0A" title="Mozart — Clarinet Concerto, Adagio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Debussy</strong> — <em>La mer</em> <span class="tag">resonance</span>
+                    <p class="music-why">Debussy composed &ldquo;The Sea&rdquo; while studying Japanese wave prints. The music captures the sea as Homer depicts it: the &ldquo;wine-dark sea&rdquo; that is both captor and pathway, prison wall and road home.</p>
+                </div>
+                <div class="music-video-mini">
+                    <iframe src="https://www.youtube.com/embed/hlR9rDJMEiQ" title="Debussy — La mer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Chopin</strong> — Nocturne Op. 27 No. 2 <span class="tag">resonance</span>
+                    <p class="music-why">This nocturne unfolds like a conversation between longing and consolation. Its luminous melody evokes the paradox of Calypso's island: overwhelming beauty that cannot substitute for belonging.</p>
+                </div>
+                <div class="music-video-mini">
+                    <iframe src="https://www.youtube.com/embed/TyoRLre2EbI" title="Chopin — Nocturne Op. 27 No. 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Debussy</strong> — <em>La mer</em> <span class="tag">resonance</span>
+                    <p class="music-why">Debussy composed "The Sea" while studying Japanese wave prints. The music captures the sea as a living, breathing entity — exactly as Homer depicts it: the "wine-dark sea" that is both captor and pathway, prison wall and road home.</p>
+                </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Chopin</strong> — Nocturne Op. 27 No. 2 <span class="tag">resonance</span>
+                    <p class="music-why">This nocturne unfolds like a conversation between longing and consolation. Its luminous, floating melody evokes the paradox of Calypso's island: overwhelming beauty that cannot substitute for belonging.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-feature">
+            <h3 class="video-title">🎬 Watch: Calypso & Odysseus</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/MS4jk5kavy4" title="Classics Summarized: The Odyssey — Overly Sarcastic Productions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ——————————————————— CHAPTER III: NAUSICAA ——————————————————— -->
+<section id="nausicaa" class="chapter">
+    <div class="chapter-hero">
+        <img src="images/nausicaa.jpg" alt="Nausicaa discovering Odysseus on the beach" class="chapter-hero-img" loading="lazy">
+        <div class="chapter-hero-overlay"></div>
+        <div class="chapter-hero-text">
+            <span class="chapter-number">Chapter III</span>
+            <h2 class="chapter-title">Nausicaa &amp; the Phaeacians</h2>
+            <p class="chapter-subtitle">Books 6–8 · Civilization begins with receiving the stranger</p>
+        </div>
+    </div>
+    <div class="container narrow chapter-body">
+        <div class="dropcap-text">
+            <p><span class="dropcap">S</span>hipwrecked, naked, and socially erased, Odysseus crawls onto a beach where a young princess named Nausicaa is washing laundry with her handmaidens. He is at his most vulnerable — stripped of armor, title, ship, and crew. He has nothing to offer.</p>
+            <p>And yet the Phaeacians receive him. They clothe him, feed him, listen to his story, entertain him with games and song, and ultimately carry him home on one of their magical ships. All this <em>before</em> they know who he is.</p>
+        </div>
+
+        <div class="insight-box">
+            <h4>🔮 The Spiritual Pattern</h4>
+            <p>Hospitality can restore <strong>personhood before biography is known</strong>. The stranger is not first required to prove usefulness. This creates a genuine dialogue with biblical hospitality — <em>Hebrews 13:2</em> famously makes care for strangers spiritually consequential.</p>
+            <p>In systems terms, hospitality is a <strong>technology for reducing uncertainty between disconnected social nodes</strong>. The Phaeacians demonstrate that the highest civilization is measured not by wealth or power, but by how it treats the unknown.</p>
+        </div>
+
+        <div class="reflection-question">
+            <h4>💭 Deep Question</h4>
+            <p><em>Do we require identity before offering dignity, or can dignity precede identification?</em></p>
+        </div>
+
+        <div class="music-box">
+            <h4>🎵 Listening Laboratory</h4>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Mozart</strong> — Clarinet Quintet, Larghetto <span class="tag">resonance</span>
+                    <p class="music-why">The Larghetto is one of the most gentle, trusting pieces in all of music. Its intimacy embodies what the Phaeacians offer: a space where a stranger is received with dignity before being asked for credentials.</p>
+                </div>
+                <div class="music-video-mini">
+                    <iframe src="https://www.youtube.com/embed/F-KeKdEBCLk" title="Mozart — Clarinet Quintet, Larghetto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Grieg</strong> — Morning Mood <span class="tag">resonance</span>
+                    <p class="music-why">The fresh, luminous sunrise that opens Grieg's <em>Peer Gynt Suite</em> captures the moment Odysseus washes ashore &mdash; stripped of everything, yet greeted by morning light and the sound of Nausicaa's laughter.</p>
+                </div>
+                <div class="music-video-mini">
+                    <iframe src="https://www.youtube.com/embed/7lKo6TYDXCQ" title="Grieg — Morning Mood" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Beethoven</strong> — Pastoral Symphony, second movement <span class="tag">resonance</span>
+                    <p class="music-why">Subtitled &ldquo;Scene by the brook,&rdquo; this movement evokes the very landscape where Nausicaa discovers Odysseus &mdash; a flowing stream, birdsong, and the gentle rhythms of a world at peace.</p>
+                </div>
+                <div class="music-video-mini">
+                    <iframe src="https://www.youtube.com/embed/6sMXfHnYnAM" title="Beethoven — Pastoral Symphony, second movement" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Grieg</strong> — Morning Mood <span class="tag">resonance</span>
+                    <p class="music-why">The fresh, luminous sunrise that opens Grieg's <em>Peer Gynt Suite</em> captures the moment Odysseus washes ashore — stripped of everything, yet greeted by morning light and the sound of Nausicaa's laughter.</p>
+                </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Beethoven</strong> — Pastoral Symphony, second movement <span class="tag">resonance</span>
+                    <p class="music-why">Subtitled "Scene by the brook," this movement evokes the very landscape where Nausicaa discovers Odysseus — a flowing stream, birdsong, and the gentle rhythms of a world at peace.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ——————————————————— CHAPTER IV: LOTUS-EATERS ——————————————————— -->
+<section id="lotus" class="chapter chapter-alt">
+    <div class="chapter-hero">
+        <img src="images/lotus-eaters.jpg" alt="Sailors lost among the lotus flowers" class="chapter-hero-img" loading="lazy">
+        <div class="chapter-hero-overlay"></div>
+        <div class="chapter-hero-text">
+            <span class="chapter-number">Chapter IV</span>
+            <h2 class="chapter-title">Cicones &amp; Lotus-Eaters</h2>
+            <p class="chapter-subtitle">Book 9 · The two ways of losing the mission</p>
+        </div>
+    </div>
+    <div class="container narrow chapter-body">
+        <div class="dropcap-text">
+            <p><span class="dropcap">T</span>wo encounters, two opposite errors. At the island of the Cicones, Odysseus' men raid a city, win easily, but then refuse to leave. They stay too long celebrating, and the Cicones return with reinforcements, killing many. <strong>Too much appetite after achieving the objective.</strong></p>
+            <p>Then they reach the land of the Lotus-Eaters, where anyone who tastes the lotus flower forgets everything — their mission, their home, their identity. The men who eat the lotus have to be dragged weeping back to the ships. <strong>Pleasure erases the objective itself.</strong></p>
+        </div>
+
+        <blockquote class="pullquote">
+            <p>The opposite of homecoming is not necessarily choosing the wrong home.<br>
+            <strong>It may be forgetting that home exists.</strong></p>
+        </blockquote>
+
+        <div class="insight-box">
+            <h4>🔮 The Spiritual Pattern</h4>
+            <p>The lotus produces one of the epic's most profound ideas. This resembles <strong>addiction, present bias, and attentional capture</strong> more than conventional villainy. The dangerous thing is attractive precisely because it makes the distant good <em>stop mattering</em>.</p>
+            <p>Biblical traditions place enormous weight on <em>remembering</em> — remembering covenant, deliverance, commandment. The resemblance is conceptually powerful.</p>
+        </div>
+
+        <div class="reflection-question">
+            <h4>💭 Deep Question</h4>
+            <p><em>What are the "lotus flowers" in my own life — the pleasant distractions that don't destroy me directly, but quietly make me forget what I was trying to return to?</em></p>
+        </div>
+
+        <div class="video-feature">
+            <h3 class="video-title">🎬 Watch: The Odyssey Summarized</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/A-3rHQ70Pag" title="Classics Summarized: The Odyssey" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ——————————————————— CHAPTER V: POLYPHEMUS ——————————————————— -->
+<section id="polyphemus" class="chapter">
+    <div class="chapter-hero">
+        <img src="images/polyphemus.jpg" alt="Odysseus confronting the Cyclops" class="chapter-hero-img" loading="lazy">
+        <div class="chapter-hero-overlay"></div>
+        <div class="chapter-hero-text">
+            <span class="chapter-number">Chapter V</span>
+            <h2 class="chapter-title">Polyphemus: "Nobody," Then Somebody</h2>
+            <p class="chapter-subtitle">Book 9 · Cunning saves him. Ego compromises the victory.</p>
+        </div>
+    </div>
+    <div class="container narrow chapter-body">
+        <div class="dropcap-text">
+            <p><span class="dropcap">T</span>rapped inside a sealed cave with a one-eyed giant who eats his men two at a time, Odysseus executes one of the most brilliant escape plans in all of literature. He tells the Cyclops his name is "Nobody" (<em>Outis</em>). He gets the monster drunk. He blinds him with a sharpened stake. When Polyphemus screams for help and the other Cyclopes ask who's hurting him, he shouts "Nobody is hurting me!" — and they walk away.</p>
+            <p>The men hide beneath the bellies of sheep and escape. It is a masterpiece of timing, language, courage, and cunning.</p>
+            <p>And then Odysseus ruins it.</p>
+        </div>
+
+        <blockquote class="pullquote">
+            <p>Cunning saves him. Ego compromises the victory.</p>
+        </blockquote>
+
+        <p>Safely back on his ship, Odysseus cannot resist taunting the blinded giant. He shouts his real name — <em>"It was Odysseus who blinded you!"</em> — and the Cyclops, now knowing who to curse, calls upon his father Poseidon, god of the sea, to punish his attacker. This single act of boasting will cost Odysseus ten more years of suffering.</p>
+
+        <div class="insight-box">
+            <h4>🔮 The Paradox of Identity</h4>
+            <p>Odysseus knows how to hide his identity but <strong>cannot tolerate remaining unrecognized</strong>. The poem repeatedly distinguishes problem-solving intelligence from self-mastery. This may be the deepest spiritual question of the episode:</p>
+            <p><em>Can I accept having done something good if nobody knows that I was the one who did it?</em></p>
+        </div>
+
+        <div class="art-callout">
+            <h4>🎨 In Art: Ulysses deriding Polyphemus</h4>
+            <div class="art-embed" onclick="openLightbox(this)">
+                <img src="images/art-turner.jpg" alt="Ulysses deriding Polyphemus — inspired by J.M.W. Turner" loading="lazy">
+            </div>
+            <p class="art-description"><strong>Inspired by J.M.W. Turner</strong> — <em>Ulysses deriding Polyphemus</em> (1829, National Gallery, London). Turner chose precisely the paradoxical moment — victory followed by dangerous boasting. The blinded Cyclops is a dark silhouette on the cliffs, almost absorbed into the mountain itself, while Odysseus' ship sails triumphantly into a sunrise of almost supernatural beauty. The sky blazes with Turner's revolutionary light. But beauty masks danger: this is the exact moment Odysseus shouts his real name, inviting Poseidon's curse. Turner understood that triumph and catastrophe can occupy the same frame.</p>
+            <p><a href="https://www.nationalgallery.org.uk/paintings/joseph-mallord-william-turner-ulysses-deriding-polyphemus-homer-s-odyssey" target="_blank" rel="noopener">→ View the original at the National Gallery, London</a></p>
+        </div>
+
+        <div class="video-feature">
+            <h3 class="video-title">🎬 Watch: The Odyssey — Every Adventure</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/A-3rHQ70Pag" title="Classics Summarized: The Odyssey" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ——————————————————— CHAPTER VI: AEOLUS ——————————————————— -->
+<section id="aeolus" class="chapter chapter-alt">
+    <div class="chapter-hero">
+        <img src="images/aeolus-winds.jpg" alt="Aeolus and the bag of winds" class="chapter-hero-img" loading="lazy">
+        <div class="chapter-hero-overlay"></div>
+        <div class="chapter-hero-text">
+            <span class="chapter-number">Chapter VI</span>
+            <h2 class="chapter-title">Aeolus &amp; the Laestrygonians</h2>
+            <p class="chapter-subtitle">Book 10 · Catastrophe begins before the catastrophe</p>
+        </div>
+    </div>
+    <div class="container narrow chapter-body">
+        <div class="dropcap-text">
+            <p><span class="dropcap">A</span>eolus, keeper of the winds, gives Odysseus an extraordinary gift: all the dangerous winds sealed in a leather bag, with only the gentle west wind left free to carry them home. They sail for nine days. Ithaca appears on the horizon. Odysseus, exhausted, falls asleep.</p>
+            <p>His crew, who don't know what's in the bag and suspect Odysseus is hoarding treasure, open it. The winds burst free, and the fleet is blown all the way back to Aeolus — who refuses to help them a second time. Then the Laestrygonians, giant cannibals, destroy all but one ship.</p>
+        </div>
+
+        <div class="insight-box">
+            <h4>🔮 A Leadership Failure</h4>
+            <p>The common reading says "the crew was foolish." But deeper questions emerge: <strong>Why did they distrust Odysseus? Why was information distributed so unevenly? Why did mission-critical safety depend upon unexplained obedience?</strong></p>
+            <p>This resembles <strong>modern cascading failure</strong>: small governance weakness → increased exposure → catastrophic event. A leader must create conditions in which others can participate intelligently in knowing the right thing.</p>
+        </div>
+
+        <div class="reflection-question">
+            <h4>💭 Deep Question</h4>
+            <p><em>Where does my own need for control prevent others from understanding what they're carrying?</em></p>
+        </div>
+    </div>
+</section>
+
+<!-- ——————————————————— CHAPTER VII: CIRCE ——————————————————— -->
+<section id="circe" class="chapter">
+    <div class="chapter-hero">
+        <img src="images/circe.jpg" alt="Circe offering the cup" class="chapter-hero-img" loading="lazy">
+        <div class="chapter-hero-overlay"></div>
+        <div class="chapter-hero-text">
+            <span class="chapter-number">Chapter VII</span>
+            <h2 class="chapter-title">Circe: Men Become Pigs</h2>
+            <p class="chapter-subtitle">Book 10 · Transformation, resistance, and unexpected wisdom</p>
+        </div>
+    </div>
+    <div class="container narrow chapter-body">
+        <div class="dropcap-text">
+            <p><span class="dropcap">O</span>n the island of Aeaea, the goddess-sorceress Circe drugs Odysseus' companions and transforms them into swine. They retain their human minds inside animal bodies — aware, but powerless. It is not death. It is something arguably worse: a <em>change of state</em> so total that the person remains conscious of what they've lost.</p>
+            <p>The god Hermes gives Odysseus the protective herb <em>moly</em> — a mysterious white flower with a black root that mortals cannot ordinarily pluck from the earth. Armed with this divine protection and strategic instructions, Odysseus resists Circe's magic, forces her to restore his companions, and — most intriguingly — the dangerous sorceress eventually becomes host, lover, and guide.</p>
+        </div>
+
+        <div class="insight-box multi-reading">
+            <h4>🔮 Multiple Readings</h4>
+            <div class="reading-tabs">
+                <button class="tab-btn active" data-tab="psychological">Psychological</button>
+                <button class="tab-btn" data-tab="spiritual">Spiritual</button>
+                <button class="tab-btn" data-tab="systemic">Systemic</button>
+                <button class="tab-btn" data-tab="deepest">The Deepest Layer</button>
+            </div>
+            <div class="tab-content active" id="tab-psychological">
+                <p>Human rationality is more fragile than we like to imagine. Under certain conditions — substances, environments, power dynamics — our higher capacities can be overridden. The transformation is not simply voluntary.</p>
+            </div>
+            <div class="tab-content" id="tab-spiritual">
+                <p>Appetite becomes dangerous when it <strong>absorbs consciousness</strong> rather than taking its proper place inside it. <em>Moly</em> can be imaginatively compared with grace, discipline, knowledge, or spiritual protection — but these are readerly analogies, not Homer's explicit theology.</p>
+            </div>
+            <div class="tab-content" id="tab-systemic">
+                <p>Environmental conditions can change state. But crucially, <strong>transformation can also be reversed</strong>. The system is not locked into degradation.</p>
+            </div>
+            <div class="tab-content" id="tab-deepest">
+                <p>Circe changes from <strong>enemy to teacher</strong>. Mature wisdom does not merely destroy the dangerous "other" — it establishes a <em>transformed relationship</em> with what was dangerous. This is perhaps the most radical insight of the episode.</p>
+            </div>
+        </div>
+
+        <div class="art-callout">
+            <h4>🎨 In Art: Circe Offering the Cup to Ulysses</h4>
+            <div class="art-embed" onclick="openLightbox(this)">
+                <img src="images/circe.jpg" alt="Circe Offering the Cup to Ulysses — inspired by Waterhouse" loading="lazy">
+            </div>
+            <p class="art-description"><strong>Inspired by John William Waterhouse</strong> — <em>Circe Offering the Cup to Ulysses</em> (1891, Gallery Oldham). Waterhouse places Circe enthroned in her palace of enchantment, surrounded by her transformed victims — men turned to beasts. She extends the fatal cup with calm confidence. But look carefully: Odysseus is present, holding the protective herb <em>moly</em> that glows white in his hand. The painting makes the power relationship <em>visible</em>. Circe commands the scene, yet the viewer knows her magic will fail against this particular visitor. The tension between her certainty and his secret protection creates the drama.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Circe_Offering_the_Cup_to_Ulysses" target="_blank" rel="noopener">→ Learn more about this painting</a></p>
+        </div>
+
+        <div class="video-feature">
+            <h3 class="video-title">🎬 Watch: The Science Behind the Myth</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/CVo225pUaSA" title="Classics Summarized: The Odyssey" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ——————————————————— CHAPTER VIII: UNDERWORLD ——————————————————— -->
+<section id="underworld" class="chapter chapter-alt">
+    <div class="chapter-hero">
+        <img src="images/underworld.jpg" alt="Odysseus at the entrance to the Underworld" class="chapter-hero-img" loading="lazy">
+        <div class="chapter-hero-overlay"></div>
+        <div class="chapter-hero-text">
+            <span class="chapter-number">Chapter VIII</span>
+            <h2 class="chapter-title">The Underworld</h2>
+            <p class="chapter-subtitle">Book 11 · Descend in order to continue</p>
+        </div>
+    </div>
+    <div class="container narrow chapter-body">
+        <div class="dropcap-text">
+            <p><span class="dropcap">O</span>dysseus sails to the edge of the world and performs a ritual sacrifice over a pit. The shades of the dead rise — transparent, voiceless until they drink blood. He speaks with the blind prophet Tiresias, who gives him the guidance he needs. He sees his mother, Anticlea, and learns she died of grief for him. He encounters Ajax, still furious; Achilles, who would rather be a living slave than king of the dead; and Agamemnon, murdered by his own wife.</p>
+        </div>
+
+        <blockquote class="pullquote">
+            <p>The route forward passes downward.<br>
+            One cannot complete homecoming while remaining psychologically insulated from mortality.</p>
+        </blockquote>
+
+        <div class="insight-box">
+            <h4>🔮 The Memory Archive</h4>
+            <p>The Underworld functions as a <strong>memory archive</strong>. The dead no longer act politically, yet they continue supplying information that reorganizes the living. The confrontation with death doesn't destroy Odysseus — it <em>corrects his attention</em> by introducing mortality as a real, personal fact.</p>
+        </div>
+
+        <div class="reflection-question">
+            <h4>💭 Spiritual Exercise</h4>
+            <p><em>Ask not "What happens when I die?" first, but: "What would change in my life if mortality stopped being an abstraction?"</em></p>
+        </div>
+
+        <div class="music-box">
+            <h4>🎵 Listening Laboratory</h4>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Chopin</strong> — Funeral March <span class="tag">resonance</span>
+                    <p class="music-why">The most famous musical meditation on death ever written. The heavy tread gives way to a luminous middle section &mdash; a memory of beauty in the midst of mourning. Odysseus descends among the dead and finds not only horror but <em>information</em>.</p>
+                </div>
+                <div class="music-video-mini">
+                    <iframe src="https://www.youtube.com/embed/I6ariVeZP9g" title="Chopin — Funeral March" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Mozart</strong> — Requiem, <em>Lacrimosa</em> <span class="tag">resonance</span>
+                    <p class="music-why">Mozart died before completing this Requiem. The <em>Lacrimosa</em> (&ldquo;Day of Tears&rdquo;) was the last music he wrote &mdash; a composer literally encountering his own mortality while creating art about death.</p>
+                </div>
+                <div class="music-video-mini">
+                    <iframe src="https://www.youtube.com/embed/2Kxq2EVjJ2I" title="Mozart — Requiem, Lacrimosa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Beethoven</strong> — &ldquo;Moonlight&rdquo; Sonata, first movement <span class="tag">resonance</span>
+                    <p class="music-why">Its hypnotic, ghostly arpeggios create a landscape between waking and dreaming &mdash; the liminal space of the Underworld itself, where the dead drift as shadows remembering life.</p>
+                </div>
+                <div class="music-video-mini">
+                    <iframe src="https://www.youtube.com/embed/HH2pOUxmAHM" title="Beethoven — Moonlight Sonata, first movement" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Mozart</strong> — Requiem, <em>Lacrimosa</em> <span class="tag">resonance</span>
+                    <p class="music-why">Mozart died before completing this Requiem. The <em>Lacrimosa</em> ("Day of Tears") was the last music he wrote — a composer literally encountering his own mortality while creating art about death. Odysseus meets his own mother's shade and learns she died of grief for him.</p>
+                </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Beethoven</strong> — "Moonlight" Sonata, first movement <span class="tag">resonance</span>
+                    <p class="music-why">Beethoven subtitled this <em>Sonata quasi una Fantasia</em>. Its hypnotic, ghostly arpeggios create a landscape between waking and dreaming — the liminal space of the Underworld itself, where the dead drift as shadows remembering life.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ——————————————————— CHAPTER IX: SIRENS ——————————————————— -->
+<section id="sirens" class="chapter">
+    <div class="chapter-hero">
+        <img src="images/sirens.jpg" alt="Odysseus bound to the mast" class="chapter-hero-img" loading="lazy">
+        <div class="chapter-hero-overlay"></div>
+        <div class="chapter-hero-text">
+            <span class="chapter-number">Chapter IX</span>
+            <h2 class="chapter-title">The Sirens: Freedom by Self-Binding</h2>
+            <p class="chapter-subtitle">Book 12 · The most modern idea in the ancient world</p>
+        </div>
+    </div>
+    <div class="container narrow chapter-body">
+        <div class="dropcap-text">
+            <p><span class="dropcap">T</span>he crew plugs their ears with wax. Odysseus, who insists on <em>hearing</em> the Sirens, has himself bound to the mast under his own prior command. When the song fills his mind with desire so intense he begs to be released, his crew — obeying his earlier self rather than his presently desperate self — tightens the ropes.</p>
+        </div>
+
+        <div class="big-question" style="margin: 3rem 0;">
+            <p>"Future me will not be trustworthy under these conditions."<br>
+            So present Odysseus changes what future Odysseus is <em>capable</em> of doing.</p>
+        </div>
+
+        <p>This is one of the cleanest models of <strong>precommitment</strong> ever imagined. It moves us beyond the simplistic idea that virtue means "having enough willpower." Sometimes wisdom means <em>not requiring heroic willpower at the moment of maximum vulnerability</em>.</p>
+
+        <blockquote class="pullquote">
+            <p>Sometimes freedom is protected not by eliminating constraints,<br>
+            but by <strong>choosing the right constraint before temptation arrives</strong>.</p>
+        </blockquote>
+
+        <div class="theology-note">
+            <h4>⛪ Historical Christian Reception</h4>
+            <p>Here Christian influence becomes <em>historically concrete</em>. Clement of Alexandria used the Sirens in Christian exhortation. Later, <strong>Maximus of Turin explicitly reconfigured the mast as an image of the cross</strong>. In that transformation, clever self-binding acquires a new theological meaning: salvation by fastening oneself to a structure that can withstand the seductive forces one cannot safely negotiate alone.</p>
+        </div>
+
+        <div class="art-callout">
+            <h4>🎨 In Art: Ulysses and the Sirens</h4>
+            <div class="art-embed" onclick="openLightbox(this)">
+                <img src="images/art-sirens.jpg" alt="Ulysses and the Sirens — inspired by Waterhouse" loading="lazy">
+            </div>
+            <p class="art-description"><strong>Inspired by John William Waterhouse</strong> — <em>Ulysses and the Sirens</em> (1891, National Gallery of Victoria). Unlike the popular mermaid image from later centuries, Waterhouse deliberately chose the <strong>ancient bird-bodied Siren</strong> — women with vast, dark wings who swoop onto the ship itself. Odysseus is bound to the mast, face contorted with longing and struggle, while his wax-eared crew rows on, utterly oblivious to the deadly beauty surrounding them. The painting captures the central paradox: the bound man is the only one who truly <em>experiences</em> the song, and the free men are the ones who are truly deaf to it.</p>
+            <p><a href="https://www.ngv.vic.gov.au/explore/collection/work/4457/" target="_blank" rel="noopener">→ View the original at the National Gallery of Victoria</a></p>
+        </div>
+
+        <div class="video-feature">
+            <h3 class="video-title">🎬 Watch: A Tour of the Ancient Greek Underworld</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/1yv_MXNYbAo" title="Classics Summarized: The Odyssey" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <p class="video-caption">Debussy's <em>Sirènes</em> uses the sea and wordless female voices to create an elusive musical field of attraction — not illustration, but evocation.</p>
+        </div>
+
+        <div class="reflection-question">
+            <h4>💭 Generative Question</h4>
+            <p><em>What if the Sirens represent not pleasure but certainty? Their attraction includes privileged knowledge. That would make them relevant not only to sensual temptation but to ideologies, conspiracy systems, charismatic gurus, and technologies that promise complete explanatory closure.</em></p>
+        </div>
+    </div>
+</section>
+
+<!-- ——————————————————— CHAPTER X: SCYLLA & CHARYBDIS ——————————————————— -->
+<section id="scylla" class="chapter chapter-alt">
+    <div class="chapter-hero">
+        <img src="images/scylla-charybdis.jpg" alt="Ship between Scylla and Charybdis" class="chapter-hero-img" loading="lazy">
+        <div class="chapter-hero-overlay"></div>
+        <div class="chapter-hero-text">
+            <span class="chapter-number">Chapter X</span>
+            <h2 class="chapter-title">Scylla &amp; Charybdis</h2>
+            <p class="chapter-subtitle">Book 12 · Wisdom without a clean victory</p>
+        </div>
+    </div>
+    <div class="container narrow chapter-body">
+        <div class="dropcap-text">
+            <p><span class="dropcap">C</span>irce warns Odysseus that the strait ahead offers no lossless option. On one side, Charybdis — a monstrous whirlpool that will swallow the entire ship. On the other, Scylla — a six-headed monster living in a cliff face who will snatch and devour six men. There is no path that avoids both.</p>
+        </div>
+
+        <blockquote class="pullquote">
+            <p>A decision can be prudent and still tragic.</p>
+        </blockquote>
+
+        <div class="insight-box">
+            <h4>🔮 The Harder Insight</h4>
+            <p>Modern culture often equates correct decisions with good outcomes. Scylla and Charybdis expose the mistake. The episode dismantles the fantasy that <strong>sufficient wisdom will eliminate suffering</strong>.</p>
+            <p>The deeper lesson is not "sacrifice six to save the rest." That is too clean. The harder insight is: <strong>some decisions require both choosing and mourning.</strong></p>
+            <p>And the inverse perspective matters: from the viewpoint of the men seized by Scylla, "optimal decision" is a chilling abstraction.</p>
+        </div>
+
+        <div class="reflection-question">
+            <h4>💭 Deep Question</h4>
+            <p><em>Where in my life am I looking for a lossless option that doesn't exist — and what becomes possible when I stop?</em></p>
+        </div>
+    </div>
+</section>
+
+<!-- ——————————————————— CHAPTER XI: HELIOS ——————————————————— -->
+<section id="helios" class="chapter">
+    <div class="chapter-hero">
+        <img src="images/cattle-helios.jpg" alt="The sacred cattle of the sun god" class="chapter-hero-img" loading="lazy">
+        <div class="chapter-hero-overlay"></div>
+        <div class="chapter-hero-text">
+            <span class="chapter-number">Chapter XI</span>
+            <h2 class="chapter-title">The Cattle of Helios</h2>
+            <p class="chapter-subtitle">Book 12 · What does "sacred" mean during scarcity?</p>
+        </div>
+    </div>
+    <div class="container narrow chapter-body">
+        <div class="dropcap-text">
+            <p><span class="dropcap">T</span>he crew has been warned — by Tiresias, by Circe, by Odysseus himself — not to harm the sacred golden cattle of Helios, the sun god. But they are stranded on the island by bad weather. Days pass. Weeks. Their food runs out. They are <em>starving</em>.</p>
+            <p>While Odysseus sleeps, his men make a choice they know is forbidden. They slaughter the divine cattle and feast. When Zeus learns of the sacrilege, he destroys their ship with a thunderbolt. Odysseus alone survives.</p>
+        </div>
+
+        <div class="insight-box">
+            <h4>🔮 Beyond Simple Punishment</h4>
+            <p>A shallow reading says: "They broke the command and were punished." A more serious reading notices that <strong>they are starving</strong>.</p>
+            <p>The spiritual problem becomes: <em>Does extreme necessity eliminate sacred limits, reduce responsibility, or reveal precisely why a protected boundary was created?</em></p>
+            <p>This resembles <strong>ecological commons problems</strong>. A protected resource is most tempting to consume during crisis. Yet once every long-term constraint is converted into short-term survival, the future can disappear.</p>
+        </div>
+
+        <div class="reflection-question">
+            <h4>💭 Deep Question</h4>
+            <p><em>What boundaries do I treat as negotiable the moment circumstances become difficult — and what does that reveal about what I actually hold sacred?</em></p>
+        </div>
+    </div>
+</section>
+
+<!-- ——————————————————— CHAPTER XII: THE RETURN ——————————————————— -->
+<section id="return" class="chapter chapter-alt">
+    <div class="chapter-hero">
+        <img src="images/argos.jpg" alt="Odysseus disguised as a beggar and his dog Argos" class="chapter-hero-img" loading="lazy">
+        <div class="chapter-hero-overlay"></div>
+        <div class="chapter-hero-text">
+            <span class="chapter-number">Chapter XII</span>
+            <h2 class="chapter-title">The Return: Recognition &amp; Disguise</h2>
+            <p class="chapter-subtitle">Books 13–17 · Almost nobody recognizes the king</p>
+        </div>
+    </div>
+    <div class="container narrow chapter-body">
+        <div class="dropcap-text">
+            <p><span class="dropcap">T</span>he Phaeacians finally carry Odysseus home to Ithaca while he sleeps. Athena disguises him as an elderly beggar. He enters his own palace, his own world, without the visual signs of kingship — and can therefore observe who people have become during his twenty-year absence.</p>
+        </div>
+
+        <blockquote class="pullquote">
+            <p>The disguise is much more than camouflage.<br>
+            It is an <strong>audit of reality without status distortion</strong>.</p>
+        </blockquote>
+
+        <p>Recognition unfolds gradually. Telemachus is brought into the truth. The old dog <strong>Argos</strong>, lying neglected on a dung heap, lifts his head and wags his tail — recognizing his master after twenty years. A tear rolls down Odysseus' cheek. Argos dies.</p>
+
+        <div class="insight-box argos-box">
+            <h4>🐕 Why Argos Matters</h4>
+            <p>Human society has become so corrupted by status, costume, fear, and strategy that <strong>an old animal sees continuity more quickly than most human beings</strong>. Argos bypasses the entire social theater of disguise. His recognition suggests an unsettling inversion: civilized humans can become <em>less perceptive</em> than an animal when perception is corrupted by hierarchy, ambition, or expectation.</p>
+        </div>
+
+        <p>Later, the old nurse <strong>Eurycleia</strong> recognizes Odysseus through his scar — a wound from a boar hunt in his youth, knowledge written on the body itself.</p>
+
+        <div class="big-question" style="margin: 2rem 0;">
+            <p>The king is present precisely where the world sees a beggar.</p>
+        </div>
+
+        <div class="theology-note">
+            <h4>⛪ A Striking Parallel</h4>
+            <p>The delayed-recognition pattern in <em>Luke 24's Emmaus narrative</em> can be placed beside Odysseus' return: someone significant is present while ordinary perception fails to know who is present. There is no need to assert literary dependence to make the juxtaposition spiritually fruitful.</p>
+        </div>
+
+        <div class="reflection-question">
+            <h4>💭 Deep Question</h4>
+            <p><em>Who would know me if all evidence of rank, wealth, profession, youth, and prestige vanished?</em></p>
+        </div>
+
+        <div class="video-feature">
+            <h3 class="video-title">🎬 Watch: Monteverdi — Il ritorno d'Ulisse in patria</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/13gSwhGsXZ0" title="Monteverdi — Il ritorno d'Ulisse in patria | La Fenice 2017" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <p class="video-caption">Monteverdi's 1640 opera — one of the earliest and greatest musical retellings of Odysseus' return to Ithaca.</p>
+        </div>
+
+        <div class="music-box">
+            <h4>🎵 Listening Laboratory</h4>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Beethoven</strong> — Les Adieux, &ldquo;Das Wiedersehen&rdquo; <span class="tag">resonance</span>
+                    <p class="music-why">Beethoven's Sonata No. 26 has three movements titled Farewell, Absence, Return. The final movement <em>Das Wiedersehen</em> bursts with joy &mdash; the musical structure <strong>mirrors the Odyssey's own three-act shape</strong>.</p>
+                </div>
+                <div class="music-video-mini">
+                    <iframe src="https://www.youtube.com/embed/bldQpHxihk8" title="Beethoven — Les Adieux, Das Wiedersehen" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Grieg</strong> — Homeward, Op. 62 No. 6 <span class="tag">resonance</span>
+                    <p class="music-why">Grieg gave this lyric piece the title <em>Hjemover</em> &mdash; &ldquo;Homeward.&rdquo; It builds from quiet anticipation to tender arrival, capturing the emotional texture of approaching a place you've been away from too long.</p>
+                </div>
+                <div class="music-video-mini">
+                    <iframe src="https://www.youtube.com/embed/tuyzJmJVUHw" title="Grieg — Homeward, Op. 62 No. 6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Monteverdi</strong> — <em>Il ritorno d'Ulisse in patria</em> <span class="tag tag-primary">direct reception</span>
+                    <p class="music-why">Composed in 1640, one of the first operas ever written and a <strong>direct adaptation</strong> of the Odyssey. Monteverdi gave musical voice to Homer's characters. The recognition scene, set to music, becomes unbearably moving.</p>
+                </div>
+                <div class="music-video-mini">
+                    <iframe src="https://www.youtube.com/embed/13gSwhGsXZ0" title="Monteverdi — Il ritorno d'Ulisse in patria" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Grieg</strong> — Homeward, Op. 62 No. 6 <span class="tag">resonance</span>
+                    <p class="music-why">Grieg gave this lyric piece the title <em>Hjemover</em> — "Homeward." It builds from quiet anticipation to tender arrival, capturing the emotional texture of approaching a place you've been away from too long.</p>
+                </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Monteverdi</strong> — <em>Il ritorno d'Ulisse in patria</em> <span class="tag tag-primary">direct reception</span>
+                    <p class="music-why">Composed in 1640, this is one of the first operas ever written and a <strong>direct adaptation</strong> of the Odyssey. Monteverdi gave musical voice to Homer's characters: Penelope's grief is a soprano lament, Odysseus' disguise a baritone performance. The recognition scene, set to music, becomes unbearably moving.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ——————————————————— CHAPTER XIII: PENELOPE ——————————————————— -->
+<section id="penelope" class="chapter">
+    <div class="chapter-hero">
+        <img src="images/penelope.jpg" alt="Penelope at her loom" class="chapter-hero-img" loading="lazy">
+        <div class="chapter-hero-overlay"></div>
+        <div class="chapter-hero-text">
+            <span class="chapter-number">Chapter XIII</span>
+            <h2 class="chapter-title">Penelope, the Bow &amp; the Rooted Bed</h2>
+            <p class="chapter-subtitle">Books 21–23 · The deepest test of identity</p>
+        </div>
+    </div>
+    <div class="container narrow chapter-body">
+        <div class="dropcap-text">
+            <p><span class="dropcap">P</span>enelope is often reduced to an icon of passive fidelity. The poem gives us something far more interesting: she delays, tests, conceals, infers, and refuses premature recognition. <strong>Her intelligence resembles Odysseus' own.</strong></p>
+            <p>She devises the bow contest: only the man who can string Odysseus' great bow and shoot an arrow through twelve axe-handles will win her hand. None of the suitors can even bend the bow. Odysseus, still disguised, strings it effortlessly.</p>
+        </div>
+
+        <div class="two-column-insight">
+            <div class="column">
+                <h4>🏹 The Bow Tests Capability</h4>
+                <p>An impostor might possibly reproduce appearance. A powerful stranger might demonstrate strength. But the bow test reveals deep physical familiarity — the intimate knowledge of a specific weapon.</p>
+            </div>
+            <div class="column">
+                <h4>🛏️ The Bed Tests Identity</h4>
+                <p>The bed contains information shared only by the couple: Odysseus built it around the living trunk of an olive tree. Penelope's suggestion that it be moved triggers the reaction that <em>proves</em> he knows what the bed is.</p>
+            </div>
+        </div>
+
+        <blockquote class="pullquote">
+            <p>Odysseus has spent the epic moving.<br>
+            The final sign of home is something that <strong>cannot move because it is rooted in living earth</strong>.</p>
+        </blockquote>
+
+        <div class="insight-box">
+            <h4>🔮 The Symbolic Architecture</h4>
+            <p>The bed joins opposites:</p>
+            <ul class="symbolic-list">
+                <li>Journey <em>and</em> rootedness</li>
+                <li>Culture <em>and</em> nature</li>
+                <li>Husband <em>and</em> wife</li>
+                <li>Memory <em>and</em> matter</li>
+                <li>Private knowledge <em>and</em> public identity</li>
+            </ul>
+            <p><strong>Home becomes not simply "Ithaca" but shared knowledge embedded in a living structure.</strong></p>
+        </div>
+
+        <div class="art-callout">
+            <h4>🎨 In Art & Music: Penelope at the Loom</h4>
+            <div class="art-embed" onclick="openLightbox(this)">
+                <img src="images/penelope.jpg" alt="Penelope at her loom with the bow and the rooted bed" loading="lazy">
+            </div>
+            <p class="art-description">Penelope weaves by candlelight in her chamber — the loom before her, the great bow resting in the foreground, and through an archway, the marriage bed built around the living olive tree whose roots grow into the earth. These three objects represent three forms of intelligence: the loom is <em>temporal strategy</em> (weaving and unweaving to buy time), the bow is a <em>test of capability</em>, and the bed is the ultimate <em>test of identity</em> — shared knowledge that no impostor could possess. <strong>Fauré's</strong> opera <em>Pénélope</em> (1907–12) shifts the center of Odyssean reception toward Penelope's consciousness rather than treating her merely as the hero's destination.</p>
+        </div>
+
+        <div class="reflection-question">
+            <h4>💭 Generative Question</h4>
+            <p><em>Could Penelope's loom be understood as reversible computation? By day she advances an apparently irreversible process; by night she reverses it, preserving optionality and buying time. What appears domestic becomes a sophisticated temporal technology.</em></p>
+        </div>
+    </div>
+</section>
+
+<!-- ——————————————————— CHAPTER XIV: THE ENDING ——————————————————— -->
+<section id="ending" class="chapter chapter-alt">
+    <div class="chapter-hero">
+        <img src="images/suitors.jpg" alt="Odysseus revealing himself to the suitors" class="chapter-hero-img" loading="lazy">
+        <div class="chapter-hero-overlay"></div>
+        <div class="chapter-hero-text">
+            <span class="chapter-number">Chapter XIV</span>
+            <h2 class="chapter-title">The Suitors, Laertes &amp; Why the Poem Doesn't End with Victory</h2>
+            <p class="chapter-subtitle">Books 22–24 · The deepest enemy of all</p>
+        </div>
+    </div>
+    <div class="container narrow chapter-body">
+        <div class="dropcap-text">
+            <p><span class="dropcap">O</span>dysseus and his allies slaughter the suitors in a terrible act of justice. Blood pools on the great hall floor. The household is finally, violently reclaimed.</p>
+            <p>But Homer does not write "and he lived happily ever after."</p>
+            <p>The relatives of those killed now have grievances of their own. They gather weapons. They march on the palace. Violence threatens to generate its own future.</p>
+        </div>
+
+        <div class="feedback-loop">
+            <div class="loop-step">Suitor dies</div>
+            <div class="loop-arrow">→</div>
+            <div class="loop-step">Family demands retaliation</div>
+            <div class="loop-arrow">→</div>
+            <div class="loop-step">Retaliation produces another bereaved family</div>
+            <div class="loop-arrow">→</div>
+            <div class="loop-step loop-repeat">The system continues…</div>
+        </div>
+
+        <blockquote class="pullquote">
+            <p>The deepest enemy is finally not Cyclops, witch, Siren, whirlpool, or rival man.<br>
+            It is <strong>the capacity of violence to generate its own future</strong>.</p>
+        </blockquote>
+
+        <div class="insight-box">
+            <h4>🔮 The Stopping Rule</h4>
+            <p>The final homecoming requires something different from heroic victory. It requires a <strong>stopping rule</strong>. Athena intervenes — a kind of social circuit breaker — to halt the cycle of retaliation.</p>
+            <p>A society cannot become home again if every act of justice generates the next war.</p>
+        </div>
+
+        <div class="reflection-question">
+            <h4>💭 Final Spiritual Question</h4>
+            <p><em>Can I distinguish winning from ending the conflict?</em></p>
+        </div>
+
+        <div class="music-box">
+            <h4>🎵 Listening Laboratory</h4>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Monteverdi</strong> — Final scenes of <em>Il ritorno d'Ulisse</em> <span class="tag tag-primary">direct reception</span>
+                    <p class="music-why">The opera's final scene gives musical form to the Odyssey's ending &mdash; music designed to make the body feel what the story describes.</p>
+                </div>
+                <div class="music-video-mini">
+                    <iframe src="https://www.youtube.com/embed/13gSwhGsXZ0" title="Monteverdi — Final scenes of Il ritorno d'Ulisse" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Beethoven</strong> — Pastoral Symphony, finale <span class="tag">resonance</span>
+                    <p class="music-why">After the storm, the finale is a &ldquo;Shepherd's Hymn of Thanksgiving.&rdquo; Peace is <em>restored</em> after disruption &mdash; not mere victory, but the hard-won cessation of violence.</p>
+                </div>
+                <div class="music-video-mini">
+                    <iframe src="https://www.youtube.com/embed/z16zh55I1dU" title="Beethoven — Pastoral Symphony, finale" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Mozart</strong> — <em>Ave verum corpus</em> <span class="tag">resonance</span>
+                    <p class="music-why">Written weeks before Mozart's death &mdash; the simplest and most luminous choral work ever composed. After all the epic's complexity, the final state is: presence, recognition, peace.</p>
+                </div>
+                <div class="music-video-mini">
+                    <iframe src="https://www.youtube.com/embed/gDKCK_6WLTg" title="Mozart — Ave verum corpus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Beethoven</strong> — Pastoral Symphony, finale <span class="tag">resonance</span>
+                    <p class="music-why">After the storm passes in Beethoven's Sixth Symphony, the finale is a "Shepherd's Hymn of Thanksgiving." Peace does not simply arrive — it is <em>restored</em> after disruption. This mirrors the Odyssey's ending: not mere victory, but the hard-won cessation of violence that allows normal life to resume.</p>
+                </div>
+            </div>
+            <div class="music-item">
+                <div class="music-info">
+                    <strong>Mozart</strong> — <em>Ave verum corpus</em> <span class="tag">resonance</span>
+                    <p class="music-why">Written weeks before Mozart's death, this is perhaps the simplest and most luminous choral work ever composed. After all the epic's complexity — cunning, violence, disguise, testing — the final state is something almost unbearably plain: presence, recognition, peace.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-feature">
+            <h3 class="video-title">🎬 Watch: Classics Summarized: The Odyssey</h3>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/MS4jk5kavy4" title="Classics Summarized: The Odyssey" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div> <!-- end #chapters -->
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- THE DEEP PATTERN — SYNTHESIS -->
+<!-- ═══════════════════════════════════════════════ -->
+<section id="deep-pattern" class="section section-dark">
+    <div class="container narrow">
+        <span class="section-label">Synthesis</span>
+        <h2 class="section-title">The Most Interesting Pattern</h2>
+
+        <div class="dropcap-text">
+            <p><span class="dropcap">T</span>he deepest pattern in the Odyssey is not simply the hero's journey. It is something more precise: <strong>the protection of a long-term orientation against forces that corrupt attention.</strong></p>
+        </div>
+
+        <div class="attention-sequence">
+            <div class="attn-item"><span class="attn-icon">🌸</span><span>The Lotus corrupts attention through <strong>pleasure</strong></span></div>
+            <div class="attn-item"><span class="attn-icon">👁️</span><span>Polyphemus corrupts judgment through <strong>wounded pride</strong></span></div>
+            <div class="attn-item"><span class="attn-icon">💨</span><span>Aeolus' bag reveals attention corrupted by <strong>suspicion</strong></span></div>
+            <div class="attn-item"><span class="attn-icon">🐷</span><span>Circe changes <strong>perception and embodiment</strong></span></div>
+            <div class="attn-item"><span class="attn-icon">💀</span><span>The Underworld corrects attention by introducing <strong>mortality</strong></span></div>
+            <div class="attn-item"><span class="attn-icon">🎵</span><span>The Sirens <strong>weaponize attention</strong> directly</span></div>
+            <div class="attn-item"><span class="attn-icon">🌊</span><span>Scylla forces attention away from fantasies of <strong>total control</strong></span></div>
+            <div class="attn-item"><span class="attn-icon">🐄</span><span>Helios' cattle show scarcity collapsing attention into the <strong>immediate present</strong></span></div>
+            <div class="attn-item"><span class="attn-icon">👤</span><span>The beggar disguise strips attention from <strong>status signals</strong></span></div>
+            <div class="attn-item"><span class="attn-icon">🐕</span><span>Argos recognizes beneath <strong>appearance</strong></span></div>
+            <div class="attn-item"><span class="attn-icon">💍</span><span>Penelope refuses <strong>easy recognition</strong></span></div>
+            <div class="attn-item"><span class="attn-icon">🏹</span><span>The bow authenticates <strong>capability</strong></span></div>
+            <div class="attn-item"><span class="attn-icon">🛏️</span><span>The bed authenticates <strong>shared identity</strong></span></div>
+            <div class="attn-item"><span class="attn-icon">⚖️</span><span>Athena redirects attention from retaliation toward <strong>the future</strong></span></div>
+        </div>
+
+        <h3 class="subsection-title">The Five-Stage Architecture</h3>
+        <div class="five-stages">
+            <div class="stage">
+                <div class="stage-num">1</div>
+                <h4>Remember</h4>
+                <p>Keep Ithaca mentally real when it is physically absent.</p>
+            </div>
+            <div class="stage">
+                <div class="stage-num">2</div>
+                <h4>Bind</h4>
+                <p>Construct constraints where desire cannot safely govern itself.</p>
+            </div>
+            <div class="stage">
+                <div class="stage-num">3</div>
+                <h4>Test</h4>
+                <p>Do not confuse appearances with reality.</p>
+            </div>
+            <div class="stage">
+                <div class="stage-num">4</div>
+                <h4>Recognize</h4>
+                <p>Recover identity through information that survives disguise and time.</p>
+            </div>
+            <div class="stage">
+                <div class="stage-num">5</div>
+                <h4>Reintegrate</h4>
+                <p>Do not stop at individual victory; restore relationships and stabilize the larger system.</p>
+            </div>
+        </div>
+
+        <div class="final-insight">
+            <p>A consciousness is repeatedly exposed to systems capable of making it forget what it loves. Wisdom consists in building memory, relationships, constraints, tests, and forms of recognition strong enough for the distant good to remain real.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- ART GALLERY -->
+<!-- ═══════════════════════════════════════════════ -->
+<section id="gallery" class="section section-light">
+    <div class="container">
+        <span class="section-label">Gallery</span>
+        <h2 class="section-title">The Odyssey Through Art &amp; Time</h2>
+        <p class="section-intro">Reception itself becomes another odyssey. Homer → Artist → The anxieties of the artist's age → Our interpretation now. Each painting tells us as much about the painter's world as about Homer's.</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/hero-banner.jpg" alt="Odysseus at sea" loading="lazy">
+                <div class="gallery-caption">The Wine-Dark Sea</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/telemachus.jpg" alt="Telemachus" loading="lazy">
+                <div class="gallery-caption">Telemachus Waits</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/calypso.jpg" alt="Calypso" loading="lazy">
+                <div class="gallery-caption">The Beautiful Prison</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/nausicaa.jpg" alt="Nausicaa" loading="lazy">
+                <div class="gallery-caption">Hospitality</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/lotus-eaters.jpg" alt="Lotus Eaters" loading="lazy">
+                <div class="gallery-caption">Forgetting Home</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/polyphemus.jpg" alt="Polyphemus" loading="lazy">
+                <div class="gallery-caption">Nobody's Cunning</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/aeolus-winds.jpg" alt="Aeolus" loading="lazy">
+                <div class="gallery-caption">The Bag of Winds</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/circe.jpg" alt="Circe" loading="lazy">
+                <div class="gallery-caption">The Enchantress</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/underworld.jpg" alt="Underworld" loading="lazy">
+                <div class="gallery-caption">Among the Dead</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/sirens.jpg" alt="Sirens" loading="lazy">
+                <div class="gallery-caption">The Siren's Song</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/scylla-charybdis.jpg" alt="Scylla and Charybdis" loading="lazy">
+                <div class="gallery-caption">Between Dooms</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/cattle-helios.jpg" alt="Cattle of Helios" loading="lazy">
+                <div class="gallery-caption">Sacred Cattle</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/argos.jpg" alt="Argos" loading="lazy">
+                <div class="gallery-caption">Faithful Argos</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/penelope.jpg" alt="Penelope" loading="lazy">
+                <div class="gallery-caption">The Weaver's Wisdom</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/suitors.jpg" alt="The Suitors" loading="lazy">
+                <div class="gallery-caption">Justice & Violence</div>
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/journey-map.jpg" alt="Journey Map" loading="lazy">
+                <div class="gallery-caption">The Voyage</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">×</button>
+    <img id="lightbox-img" src="" alt="">
+</div>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- PARADOXES -->
+<!-- ═══════════════════════════════════════════════ -->
+<section class="section section-accent">
+    <div class="container narrow">
+        <span class="section-label">The Hero's Paradox</span>
+        <h2 class="section-title">Odysseus: Solution and Problem</h2>
+        <p class="section-intro">The hero does not simply defeat chaos. He carries some chaos within the capacities that make him heroic.</p>
+
+        <div class="paradox-grid">
+            <div class="paradox-row">
+                <div class="paradox-left">His courage <strong>saves</strong></div>
+                <div class="paradox-mid">↔</div>
+                <div class="paradox-right">His curiosity <strong>endangers</strong></div>
+            </div>
+            <div class="paradox-row">
+                <div class="paradox-left">His cunning <strong>saves</strong></div>
+                <div class="paradox-mid">↔</div>
+                <div class="paradox-right">His secrecy <strong>destabilizes</strong></div>
+            </div>
+            <div class="paradox-row">
+                <div class="paradox-left">His identity <strong>motivates</strong> him</div>
+                <div class="paradox-mid">↔</div>
+                <div class="paradox-right">His need for recognition <strong>prolongs suffering</strong></div>
+            </div>
+            <div class="paradox-row">
+                <div class="paradox-left">His justice <strong>restores</strong> his household</div>
+                <div class="paradox-mid">↔</div>
+                <div class="paradox-right">His violence threatens to <strong>restart civil conflict</strong></div>
+            </div>
+        </div>
+
+        <div class="final-insight">
+            <p>Maturity consists not in becoming omnipotent, but in becoming more intelligent about the conditions under which power works and fails.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- CLOSING -->
+<!-- ═══════════════════════════════════════════════ -->
+<section class="section section-dark closing-section">
+    <div class="container narrow">
+        <div class="closing-quote">
+            <p class="closing-main">The opposite of being lost is not knowing exactly where you are.</p>
+            <p class="closing-answer">The opposite of being lost is still knowing<br>what you are trying to return to.</p>
+        </div>
+
+        <div class="closing-thought">
+            <p>The Odyssey survives so many transformations because its events are specific, but its relations are portable. Its recurring pattern is larger than "a man wants to go home."</p>
+            <p>It is: <em>a consciousness repeatedly exposed to systems capable of making it forget what it loves.</em></p>
+            <p><strong>Wisdom consists in building memory, relationships, constraints, tests, and forms of recognition strong enough for the distant good to remain real.</strong></p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- FOOTER -->
+<!-- ═══════════════════════════════════════════════ -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <p class="footer-title">ΟΔΥΣΣΕΙΑ · The Odyssey</p>
+                <p class="footer-sub">A School of Homecoming</p>
+            </div>
+            <div class="footer-links">
+                <h4>Sources &amp; Further Reading</h4>
+                <ul>
+                    <li><a href="https://www.gutenberg.org/files/1727/1727-h/1727-h.htm" target="_blank" rel="noopener">The Odyssey — Project Gutenberg</a></li>
+                    <li><a href="https://poets.org/poet/homer" target="_blank" rel="noopener">Homer — Poets.org</a></li>
+                    <li><a href="https://www.nationalgallery.org.uk/paintings/joseph-mallord-william-turner-ulysses-deriding-polyphemus-homer-s-odyssey" target="_blank" rel="noopener">Turner — Ulysses deriding Polyphemus</a></li>
+                    <li><a href="https://www.ngv.vic.gov.au/explore/collection/work/4457/" target="_blank" rel="noopener">Waterhouse — Ulysses and the Sirens</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Circe_Offering_the_Cup_to_Ulysses" target="_blank" rel="noopener">Waterhouse — Circe Offering the Cup</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Il_ritorno_d%27Ulisse_in_patria" target="_blank" rel="noopener">Monteverdi — Il ritorno d'Ulisse in patria</a></li>
+                    <li><a href="https://www.gutenberg.org/ebooks/4300" target="_blank" rel="noopener">James Joyce — Ulysses (Gutenberg)</a></li>
+                </ul>
+            </div>
+            <div class="footer-about">
+                <h4>About This Project</h4>
+                <p>Based on the scholarly analysis <em>"The Odyssey as a School of Homecoming: Deep Patterns in Religion, Spirituality, Art, Music, and Human Systems."</em></p>
+                <p>Artwork created for this educational experience. All classical art referenced is in the public domain.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Made with love for Homer · MMXXVI</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
