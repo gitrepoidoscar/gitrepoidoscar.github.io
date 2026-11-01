@@ -1,0 +1,437 @@
+{
+  "images": [
+    {
+      "kind": "public-domain",
+      "credit": "Marcel Baschet, Portrait of Claude Debussy (1884), Musée d’Orsay, Paris",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Claude_Debussy,_portrait_by_Marcel_Baschet_(1884).jpg",
+      "license": "Public domain — as stated on the Wikimedia Commons file record",
+      "notes": "Downloaded 2026-11-01 as a 1400 px rendition; recompressed to JPEG; no crop.",
+      "src": "images/art-baschet-1884.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "public-domain",
+      "credit": "Katsushika Hokusai, Under the Wave off Kanagawa (The Great Wave), c. 1830–32, Metropolitan Museum of Art, New York",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tsunami_by_hokusai_19th_century.jpg",
+      "license": "Public domain — as stated on the Wikimedia Commons file record (Met collection entry 45434)",
+      "notes": "Downloaded 2026-11-01 as a 1400 px rendition; resized to 1200 px; no crop.",
+      "src": "images/art-hokusai-great-wave.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "public-domain",
+      "credit": "Hippolyte Blancard (photograph) after an engraving signed Émile Bayard, ‘Exposition universelle — Les danseuses javanaises’, c. 1889, Musée Carnavalet, Paris",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Exposition_universelle_de_1889_illustration_les_danseuses_javanaises_d%27Emile_Bayard,_PH76874.jpg",
+      "license": "CC0 (Paris Musées open content) — as stated on the Wikimedia Commons file record",
+      "notes": "Downloaded 2026-11-01 as a 1400 px rendition; recompressed to JPEG; no crop.",
+      "src": "images/art-javanese-dancers-1889.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "public-domain",
+      "credit": "Cover of the first edition of Claude Debussy, La Mer (A. Durand & Fils, 1905), Bibliothèque nationale de France",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Claude_Debussy_La_mer_couverture.PNG",
+      "license": "Public domain — as stated on the Wikimedia Commons file record",
+      "notes": "Downloaded 2026-11-01 (PNG); converted to JPEG at 1400 px; no crop.",
+      "src": "images/art-la-mer-cover-1905.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "public-domain",
+      "credit": "Édouard Manet, wood-engraved vignettes for Mallarmé’s L’Après-midi d’un faune (1876), Bibliothèque nationale de France",
+      "source_url": "https://commons.wikimedia.org/wiki/File:L%27Apr%C3%A8s-midi_d%27un_Faune_-_Les_-Nymphes,_fleuron_-_estampe_-_(Manet_(d%27apr%C3%A8s))._(Grappe_de_raisin,_cul-de-lampe)_-_(Manet_(d%27apr%C3%A8s))._(Le_Faune,_frontispice)_-_(Manet_(d%27apr%C3%A8s))_-_btv1b532635853.jpg",
+      "license": "Public domain — as stated on the Wikimedia Commons file record (source: Gallica, BnF)",
+      "notes": "Downloaded 2026-11-01 as a 1400 px rendition; recompressed to JPEG; no crop.",
+      "src": "images/art-manet-faune-1876.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "public-domain",
+      "credit": "Mary Garden as Mélisande in Debussy’s Pelléas et Mélisande, photograph, early 1900s, Library of Congress (restored file)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mary_Garden_in_Debussy%27s_Pell%C3%A9as_et_M%C3%A9lisande.jpg",
+      "license": "Public domain — as stated on the Wikimedia Commons file record (Library of Congress, cph.3b11689)",
+      "notes": "Restoration credited to Adam Cuerden on the file record. Downloaded 2026-11-01; recompressed to JPEG; no crop.",
+      "src": "images/art-mary-garden-melisande.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "public-domain",
+      "credit": "Claude Monet, Impression, soleil levant (1872), Musée Marmottan Monet, Paris",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg",
+      "license": "Public domain — as stated on the Wikimedia Commons file record",
+      "notes": "Downloaded 2026-11-01 as a 1400 px rendition; resized to 1200 px; no crop.",
+      "src": "images/art-monet-impression-sunrise.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "public-domain",
+      "credit": "Claude Monet, Rouen Cathedral, West Façade (1894), National Gallery of Art, Washington",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Rouen_Cathedral,_West_Fa%C3%A7ade_-_Google_Art_Project.jpg",
+      "license": "Public domain — as stated on the Wikimedia Commons file record (Google Art Project)",
+      "notes": "Downloaded 2026-11-01 as a 1400 px rendition; resized to 1200 px; no crop.",
+      "src": "images/art-monet-rouen-cathedral.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "public-domain",
+      "credit": "Atelier Nadar, photograph of Claude Debussy (c. 1890–1910), Bibliothèque nationale de France (Gallica)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Claude_Debussy_by_Atelier_Nadar.jpg",
+      "license": "Public domain — as stated on the Wikimedia Commons file record",
+      "notes": "Restoration credited to Adam Cuerden on the file record (from Gallica btv1b53118843k). Downloaded 2026-11-01; recompressed; no crop.",
+      "src": "images/art-nadar-debussy.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "public-domain",
+      "credit": "Claude Debussy, autograph postcard to Claude-Emma Debussy, Berlin, 16 December 1913, Bibliothèque nationale de France",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lettre_de_Claude_Debussy_%C3%A0_Claude_Emma_Debussy_sa_fille,_Berlin,_16_d%C3%A9cembre_1913_(manuscrit_autographe)_-_btv1b53026106z_(2_of_2).jpg",
+      "license": "Public domain — as stated on the Wikimedia Commons file record (source: Gallica, BnF)",
+      "notes": "Written side (2 of 2) of the postcard. Downloaded 2026-11-01; resized to 1200 px; no crop.",
+      "src": "images/art-postcard-to-chouchou-1913.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "public-domain",
+      "credit": "Georges Rochegrosse, poster for the premiere of Pelléas et Mélisande (1902), Bibliothèque nationale de France",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Georges_Rochegrosse_-_Poster_for_the_pr%C3%A8miere_of_Claude_Debussy_and_Maurice_Maeterlinck%27s_Pell%C3%A9as_et_M%C3%A9lisande.jpg",
+      "license": "Public domain — as stated on the Wikimedia Commons file record (source: Gallica, BnF)",
+      "notes": "Downloaded 2026-11-01 as a 1400 px rendition; recompressed to JPEG; no crop.",
+      "src": "images/art-rochegrosse-pelleas-1902.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "public-domain",
+      "credit": "Erik Satie (photographer), Claude Debussy and Igor Stravinsky at Debussy’s home, Bibliothèque nationale de France (record dated 1915; the photograph is often dated 1910)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Igor_Stravinsky_et_Claude_Debussy_-_btv1b7002391c.jpg",
+      "license": "Public domain — as stated on the Wikimedia Commons file record (source: Gallica, BnF)",
+      "notes": "Downloaded 2026-11-01 as a 1920 px rendition; cropped to the photograph itself (archival mount and typed label removed); recompressed.",
+      "src": "images/art-satie-stravinsky-debussy.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "public-domain",
+      "credit": "J. M. W. Turner, Snow Storm – Steam-Boat off a Harbour’s Mouth (exhibited 1842), Tate, London",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Joseph_Mallord_William_Turner_-_Snow_Storm_-_Steam-Boat_off_a_Harbour%27s_Mouth_-_WGA23178.jpg",
+      "license": "Public domain — as stated on the Wikimedia Commons file record (Web Gallery of Art reproduction)",
+      "notes": "Downloaded 2026-11-01 as a 1400 px rendition; resized to 1200 px; no crop.",
+      "src": "images/art-turner-snow-storm.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · A winter playroom",
+      "src": "images/ch-childrens-corner.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · A Conservatoire practice room",
+      "src": "images/ch-conservatoire.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · Resonance made visible",
+      "src": "images/ch-deep-pattern.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · An imagined 1889 fair pavilion",
+      "src": "images/ch-encounters.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · The faun among the reeds",
+      "src": "images/ch-faune.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · Reflections in the water",
+      "src": "images/ch-images.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · An easel facing the fog",
+      "src": "images/ch-impressionism.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · From dawn to noon on the sea",
+      "src": "images/ch-la-mer.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · Mélisande’s tower",
+      "src": "images/ch-pelleas.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · The cathedral rising from the sea",
+      "src": "images/ch-preludes.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · A study in the rain",
+      "src": "images/ch-undertow.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · A seaside room in wartime",
+      "src": "images/ch-war.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · A piano facing the sea",
+      "notes": "Generated for this site; prompt: Symbolist-style dusk scene, grand piano by an open window over a misty sea, pages dissolving into waves. No living artists named.",
+      "src": "images/hero.jpg",
+      "used_as": [
+        "hero"
+      ]
+    }
+  ],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "id": "LnoZJQqj3DQ",
+      "title": "Cécile Lastchenko | \"Air de Lia\" - L'enfant Prodigue - Claude DEBUSSY",
+      "chapter": "conservatoire",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "06jk5KSxlpk",
+      "title": "Debussy: Estampes, CD 108: I. Pagodes",
+      "chapter": "encounters",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "p3HwqqiVxbE",
+      "title": "Javanese Gamelan Ensemble - Pelog Barang - Singa Nebah (The Pouncing Lion)",
+      "chapter": "encounters",
+      "role": "music",
+      "relation": "resonance"
+    },
+    {
+      "provider": "youtube",
+      "id": "Y9iDOt2WbjY",
+      "title": "Debussy: Prélude à l’après-midi d’un faune ∙ hr-Sinfonieorchester ∙ Andrés Orozco-Estrada",
+      "chapter": "faune",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "5VMQuHMq8QQ",
+      "title": "Esmé Quartet - Claude Debussy: String Quartet in g minor, Op. 10",
+      "chapter": "faune",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "-Bxpm0EmOMU",
+      "title": "Debussy: Clair de lune | Menahem Pressler, piano",
+      "chapter": "faune",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "LAnqPXNCsbE",
+      "title": "Pelléas et Mélisande, L. 88, Act 3: \"Mes longs cheveux descendent\" (Mélisande)",
+      "chapter": "pelleas",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "y1hWp4pQpAs",
+      "title": "Debussy: La Mer ∙ hr-Sinfonieorchester ∙ Alain Altinoglu",
+      "chapter": "la-mer",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "Hyiu7fBUk7o",
+      "title": "Marc-André Hamelin- Claude Debussy: Images (Book 1)- Reflets Dans L'eau",
+      "chapter": "images",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "FhBHagm00Fs",
+      "title": "Debussy : Ibéria (Philharmonique de Radio France)",
+      "chapter": "images",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "dRN8RA5Vph8",
+      "title": "Claude Debussy - Nuages from Nocturnes",
+      "chapter": "impressionism",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "m04kBESqcAM",
+      "title": "\"Children's Corner\" by Claude Debussy // Christopher Harding, piano",
+      "chapter": "childrens-corner",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "gN3S2LMF6Oc",
+      "title": "Hélène Grimaud – Debussy: La cathédrale engloutie",
+      "chapter": "preludes",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "Rg85UbIJgZ4",
+      "title": "Debussy: Préludes / Book 1, L.117: 2. Voiles (Live)",
+      "chapter": "preludes",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "JhbfgHT42QM",
+      "title": "Debussy: Jeux (Poème dansé) , L.126: Jeux, Poème dansé, CD 133",
+      "chapter": "preludes",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "BBPloKHN1xM",
+      "title": "Victoria Bond on Debussy's \"Jeux\"",
+      "chapter": "preludes",
+      "role": "video"
+    },
+    {
+      "provider": "youtube",
+      "id": "DjV0qLecct0",
+      "title": "Seong-Jin Cho – Debussy: L'isle joyeuse, L. 106 | Yellow Lounge",
+      "chapter": "undertow",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "HHZ3RYAHq20",
+      "title": "Martha Argerich and Iddo Bar-Shai: Debussy \"en blanc et noir\" for 2 pianos",
+      "chapter": "last-works",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "5VKl7WDe8iE",
+      "title": "Debussy, Douze Études (complete) — Sergey Kuznetsov",
+      "chapter": "last-works",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "fv5HaAtTALo",
+      "title": "Debussy: Cello Sonata in D Minor / Sol Gabetta / Bertrand Chamayou",
+      "chapter": "last-works",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "5EOPKNYVkGY",
+      "title": "Augustin Hadelich & Orion Weiss play Debussy Sonata for violin and piano",
+      "chapter": "last-works",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "EW3PQIC2fWA",
+      "title": "Strawinsky: \"Symphonies d’instruments à vent\" mit Andrew Manze | NDR Radiophilharmonie",
+      "chapter": "deep-pattern",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "oEm61VGqMZk",
+      "title": "Messiaen: Préludes: I. La colombe",
+      "chapter": "deep-pattern",
+      "role": "music",
+      "relation": "direct"
+    }
+  ]
+}
