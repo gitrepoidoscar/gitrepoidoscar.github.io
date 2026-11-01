@@ -252,6 +252,62 @@
   "embeds": [
     {
       "provider": "youtube",
+      "id": "JCTQTp1PdnA",
+      "title": "Maria João Pires | Claude Debussy: Arabesque No. 1",
+      "chapter": "overture",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "ouYT5OEPfRI",
+      "title": "Lang Lang — “Rêverie”, Claude Debussy",
+      "chapter": "overture",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "-Bxpm0EmOMU",
+      "title": "Debussy: Clair de lune | Menahem Pressler, piano",
+      "chapter": "overture",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "jGSZPRk6aXA",
+      "title": "Lang Lang - Claude Debussy, La Fille aux cheveux de lin",
+      "chapter": "overture",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "U6AcYSrzTiQ",
+      "title": "Debussy: La plus que lente, CD 128",
+      "chapter": "overture",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "WMQL8t_rMBE",
+      "title": "Debussy: Le petit nègre, L.114",
+      "chapter": "overture",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "XMrdhgWR9Zk",
+      "title": "Debussy plays Debussy: Golliwogg's Cakewalk (1913)",
+      "chapter": "overture",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
       "id": "LnoZJQqj3DQ",
       "title": "Cécile Lastchenko | \"Air de Lia\" - L'enfant Prodigue - Claude DEBUSSY",
       "chapter": "conservatoire",
@@ -286,14 +342,6 @@
       "provider": "youtube",
       "id": "5VMQuHMq8QQ",
       "title": "Esmé Quartet - Claude Debussy: String Quartet in g minor, Op. 10",
-      "chapter": "faune",
-      "role": "music",
-      "relation": "direct"
-    },
-    {
-      "provider": "youtube",
-      "id": "-Bxpm0EmOMU",
-      "title": "Debussy: Clair de lune | Menahem Pressler, piano",
       "chapter": "faune",
       "role": "music",
       "relation": "direct"

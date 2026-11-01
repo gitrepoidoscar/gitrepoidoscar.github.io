@@ -1,39 +1,52 @@
-/* Story Magazine starter script (no dependencies).
-   Adapted from the final Odyssey build: progress bar, chapter scroll-spy,
-   hide-on-scroll nav, interpretive tabs, image lightbox.
-   Deliberately NOT included: scroll-reveal that hides content until an
-   observer fires (caused blank gaps in the Odyssey build) and scroll parallax. */
+/* Debussy edition — progressive enhancement only (the page is complete without JS).
+   Progress line, nav state over the hero, current-movement indicator, chapter rail
+   scroll-spy, mobile menu, WAI-ARIA tabs, and a native <dialog> lightbox with
+   closedby="any" plus a click-outside fallback for browsers without it. */
 (function () {
     "use strict";
 
     var nav = document.querySelector(".site-nav");
     var bar = document.querySelector(".progress-bar");
+    var hero = document.querySelector(".site-hero");
+    var now = document.querySelector(".nav-now");
     var railLinks = Array.prototype.slice.call(document.querySelectorAll(".chapter-rail a[href^='#']"));
     var targets = railLinks
-        .map(function (a) { return { link: a, el: document.getElementById(a.getAttribute("href").slice(1)) }; })
+        .map(function (a) { return { link: a, el: document.getElementById(a.getAttribute("href").slice(1)), label: a.getAttribute("data-label") }; })
         .filter(function (t) { return t.el; });
 
     var lastY = window.scrollY;
     var ticking = false;
+    var current = null;
 
     function onScroll() {
         var y = window.scrollY;
         var max = document.documentElement.scrollHeight - window.innerHeight;
         if (bar) bar.style.transform = "scaleX(" + (max > 0 ? Math.min(1, y / max) : 0) + ")";
 
+        if (nav && hero) {
+            var overHero = y < hero.offsetHeight - nav.offsetHeight - 10;
+            nav.classList.toggle("is-top", overHero && !nav.classList.contains("open"));
+        }
+
         if (targets.length) {
             var probe = y + window.innerHeight * 0.35;
             var active = null;
             targets.forEach(function (t) { if (t.el.offsetTop <= probe) active = t; });
-            targets.forEach(function (t) {
-                if (t === active) t.link.setAttribute("aria-current", "true");
-                else t.link.removeAttribute("aria-current");
-            });
+            var last = targets[targets.length - 1].el;
+            if (active && active.el === last && probe > last.offsetTop + last.offsetHeight) active = null;
+            if (active !== current) {
+                current = active;
+                targets.forEach(function (t) {
+                    if (t === active) t.link.setAttribute("aria-current", "true");
+                    else t.link.removeAttribute("aria-current");
+                });
+                if (now) now.textContent = active ? active.label : "";
+            }
         }
 
         if (nav && !nav.classList.contains("open") && !nav.contains(document.activeElement)) {
-            if (y > 400 && y > lastY + 5) nav.classList.add("is-hidden");
-            else if (y < lastY - 5 || y <= 400) nav.classList.remove("is-hidden");
+            if (y > 600 && y > lastY + 6) nav.classList.add("is-hidden");
+            else if (y < lastY - 6 || y <= 600) nav.classList.remove("is-hidden");
         }
         lastY = y;
         ticking = false;
@@ -41,14 +54,16 @@
     window.addEventListener("scroll", function () {
         if (!ticking) { ticking = true; window.requestAnimationFrame(onScroll); }
     }, { passive: true });
+    window.addEventListener("resize", onScroll, { passive: true });
     onScroll();
 
-    // Mobile menu toggle
+    // Mobile menu
     var toggle = document.querySelector(".nav-toggle");
     if (toggle && nav) {
         toggle.addEventListener("click", function () {
             var open = nav.classList.toggle("open");
             toggle.setAttribute("aria-expanded", open ? "true" : "false");
+            onScroll();
         });
         nav.addEventListener("click", function (e) {
             if (e.target.closest("a[href^='#']")) {
@@ -58,9 +73,21 @@
                 if (d) d.removeAttribute("open");
             }
         });
+        document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape" && nav.classList.contains("open")) {
+                nav.classList.remove("open");
+                toggle.setAttribute("aria-expanded", "false");
+                toggle.focus();
+            }
+        });
     }
+    // Close the desktop "Movements" menu when clicking elsewhere
+    var menu = document.querySelector(".nav-chapters");
+    document.addEventListener("click", function (e) {
+        if (menu && menu.open && !menu.contains(e.target)) menu.removeAttribute("open");
+    });
 
-    // Interpretive tabs (WAI-ARIA tabs pattern, arrow-key navigation)
+    // Tabs (WAI-ARIA pattern)
     document.querySelectorAll("[role='tablist']").forEach(function (list) {
         var tabs = Array.prototype.slice.call(list.querySelectorAll("[role='tab']"));
         function select(tab, focus) {
@@ -86,7 +113,7 @@
         });
     });
 
-    // Lightbox using native <dialog>: Escape closes, focus returns to opener.
+    // Lightbox: native <dialog closedby="any">; Escape closes; focus returns to the opener.
     var dialog = document.getElementById("lightbox");
     if (dialog && typeof dialog.showModal === "function") {
         var dImg = dialog.querySelector("img");
@@ -102,9 +129,17 @@
                 dialog.showModal();
             });
         });
-        dialog.addEventListener("click", function (e) {
-            if (e.target === dialog || e.target.closest(".lightbox-close")) dialog.close();
-        });
+        dialog.querySelector(".lightbox-close").addEventListener("click", function () { dialog.close(); });
+        // Fallback for browsers without closedby support: close on backdrop clicks.
+        if (!("closedBy" in HTMLDialogElement.prototype)) {
+            dialog.addEventListener("click", function (event) {
+                if (event.target !== dialog) return;
+                var r = dialog.getBoundingClientRect();
+                var inside = r.top <= event.clientY && event.clientY <= r.top + r.height &&
+                             r.left <= event.clientX && event.clientX <= r.left + r.width;
+                if (!inside) dialog.close();
+            });
+        }
         dialog.addEventListener("close", function () { if (opener) opener.focus(); });
     }
 })();
