@@ -1,0 +1,693 @@
+{
+  "images": [
+    {
+      "kind": "licensed",
+      "credit": "Gian Lorenzo Bernini, The Ecstasy of Saint Teresa (1647–52), Cornaro Chapel, Santa Maria della Vittoria, Rome — photograph by Livioandronico2013, CC BY-SA 4.0, via Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ecstasy_of_St._Teresa_HDR.jpg",
+      "license": "CC BY-SA 4.0 (photograph); the sculpture itself is in the public domain",
+      "notes": "Downloaded 2026-11-01 as a 1300 px rendition from Wikimedia Commons; recompressed; no crop.",
+      "src": "images/art-bernini-teresa.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "public-domain",
+      "credit": "Don English, Marlene Dietrich in Shanghai Express (1932), Paramount Pictures publicity photograph — public domain, via Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Marlene_Dietrich_in_Shanghai_Express_(1932)_by_Don_English.png",
+      "license": "Public domain, as stated on the Wikimedia Commons file record",
+      "notes": "Downloaded 2026-11-01 as a 1200 px rendition from Wikimedia Commons; converted to JPEG; no crop.",
+      "src": "images/art-dietrich-shanghai-1932.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "licensed",
+      "credit": "Brandon Carson, Madonna’s Blond Ambition corset by Jean Paul Gaultier (photographed 2012), CC BY 2.0, via Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Madonna%27s_Blond_Ambition_Corset.jpg",
+      "license": "CC BY 2.0",
+      "notes": "Downloaded 2026-11-01 as a 1400 px rendition from Wikimedia Commons; recompressed; no crop.",
+      "src": "images/art-gaultier-corset.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "public-domain",
+      "credit": "Soichi Sunami, Martha Graham’s Heretic, published in Dance Magazine, July 1929 — public domain, via Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Photograph_of_Martha_Graham%27s_Heretic_by_Soichi_Sunami.jpg",
+      "license": "Public domain, as stated on the Wikimedia Commons file record",
+      "notes": "Downloaded 2026-11-01 at full size (1024 px) from Wikimedia Commons; recompressed; no crop.",
+      "src": "images/art-graham-heretic-1929.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "public-domain",
+      "credit": "Jean-Auguste-Dominique Ingres, Joan of Arc at the Coronation of Charles VII (1854), Musée du Louvre — public domain, via Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ingres_coronation_charles_vii.jpg",
+      "license": "Public domain, as stated on the Wikimedia Commons file record",
+      "notes": "Downloaded 2026-11-01 as a 1200 px rendition from Wikimedia Commons; recompressed; no crop.",
+      "src": "images/art-ingres-joan-1854.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "public-domain",
+      "credit": "José Malhoa, O Fado (1910) — public domain, via Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jose_malhoa_fado.jpg",
+      "license": "Public domain (the artist died in 1933), as stated on the Wikimedia Commons file record",
+      "notes": "Downloaded 2026-11-01 at full size (1116 px) from Wikimedia Commons; recompressed; no crop.",
+      "src": "images/art-malhoa-fado-1910.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "public-domain",
+      "credit": "Boris Bilinsky, poster for Fritz Lang’s Metropolis (1927) — public domain, via Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Boris_Bilinski_(1900-1948)_Plakat_f%C3%BCr_den_Film_Metropolis_(1).jpg",
+      "license": "Public domain, as stated on the Wikimedia Commons file record",
+      "notes": "Downloaded 2026-11-01 as a 1300 px rendition from Wikimedia Commons; recompressed; no crop.",
+      "src": "images/art-metropolis-bilinsky-1927.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "public-domain",
+      "credit": "Marilyn Monroe in the trailer for Gentlemen Prefer Blondes (1953), 20th Century Fox — public domain (trailer published without a copyright notice), via Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gentlemen_Prefer_Blondes_Movie_Trailer_Screenshot_(16-2).jpg",
+      "license": "Public domain (trailer published without a copyright notice), as stated on the Wikimedia Commons file record",
+      "notes": "Downloaded 2026-11-01 at full size (720 px) from Wikimedia Commons; no crop.",
+      "src": "images/art-monroe-gpb-trailer-1953.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · Dancers’ feet, a rosary and a yoga mat",
+      "notes": "Generated for this site; anonymous dancers’ feet only, no faces; studio with a rosary and a yoga mat.",
+      "src": "images/ch-body.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · An expressionist sound stage",
+      "notes": "Generated for this site; generic expressionist film set, not a reproduction of any film; no people.",
+      "src": "images/ch-cinema.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · A glove left on the floor at dawn",
+      "notes": "Generated for this site; empty dance floor at dawn with a sequined glove; no people.",
+      "src": "images/ch-confessions-ii.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · A mirror ball over an empty floor",
+      "notes": "Generated for this site; empty dance floor with mirror ball and coloured beams; no people.",
+      "src": "images/ch-confessions.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · A ballroom runway of trophies and corsets",
+      "notes": "Generated for this site; generic runway with trophies and corsets; not a reproduction of any designer’s work; no people.",
+      "src": "images/ch-couture.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · A mirror ball of rose windows",
+      "notes": "Generated for this site; symmetrical fractal of rose windows; no people.",
+      "src": "images/ch-deep-pattern.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · A corset under a spotlight",
+      "notes": "Generated for this site; a generic cone-bra corset on a dressmaker’s mannequin; not a reproduction of any specific garment; no people.",
+      "src": "images/ch-erotica.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · Pointe shoes on a downtown fire escape",
+      "notes": "Generated for this site; downtown New York street c. 1980, pointe shoes, neon club doorway; no people, no legible text.",
+      "src": "images/ch-formation.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · A dressing room of personas",
+      "notes": "Generated for this site; costumes on faceless stands in a dressing room; no people.",
+      "src": "images/ch-identity.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · An artist’s workbench, neatly laid out",
+      "notes": "Generated for this site; flat-lay of creative tools; no people, no legible text.",
+      "src": "images/ch-lessons.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · A pew in a field of candles",
+      "notes": "Generated for this site; votive candles and a church pew in a field at dusk; no people.",
+      "src": "images/ch-like-a-prayer.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · A cowboy hat on a mixing desk",
+      "notes": "Generated for this site; desert studio still life with a cowboy hat and a military jacket; no people.",
+      "src": "images/ch-music-american-life.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · An eye patch before a web of consoles",
+      "notes": "Generated for this site; sprawling network of mixing consoles and an eye patch; no people.",
+      "src": "images/ch-network-years.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · Lace, rubber and pearls, 1984",
+      "notes": "Generated for this site; 1980s accessories still life; no people, no logos.",
+      "src": "images/ch-pop-command.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · A lotus at dawn",
+      "notes": "Generated for this site; lotus on still water, light breaking through clouds; no people.",
+      "src": "images/ch-ray-of-light.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · A marble hand mended with gold",
+      "notes": "Generated for this site; sculpted hand repaired in the kintsugi manner; not a real artwork.",
+      "src": "images/ch-resilience.jpg",
+      "used_as": [
+        "chapter-hero"
+      ]
+    },
+    {
+      "kind": "ai-illustration",
+      "credit": "Illustrative AI image · A mirror ball in a cathedral nave",
+      "notes": "Generated for this site. Prompt summary: colossal mirror ball in a Gothic cathedral nave, magenta and gold beams, stained glass, votive candles, no people, no text. No living artists named.",
+      "src": "images/hero.jpg",
+      "used_as": [
+        "hero"
+      ]
+    },
+    {
+      "kind": "licensed",
+      "credit": "chrisweger, Madonna — The Celebration Tour live, London (15 October 2023), CC BY-SA 2.0, via Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Madonna_-_The_Celebration_tour_live_-_London_15_10_2023_(53272099461).jpg",
+      "license": "CC BY-SA 2.0",
+      "notes": "Downloaded 2026-11-01 as a 1400 px rendition from Wikimedia Commons; recompressed; no crop.",
+      "src": "images/photo-celebration-london-2023.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "public-domain",
+      "credit": "David Shankbone, Madonna at the Barclays Center, New York (13 December 2023) — released into the public domain by the photographer, via Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Madonna_Celebration_Tour_2023_NYC_(53398279606).jpg",
+      "license": "Public domain (released by the author), as stated on the Wikimedia Commons file record",
+      "notes": "Downloaded 2026-11-01 as a 1600 px rendition from Wikimedia Commons; resized to 1400 px and recompressed; no crop.",
+      "src": "images/photo-celebration-nyc-2023.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "licensed",
+      "credit": "Oscar Rohena, Madonna during her Confessions Tour (6 July 2006), CC BY 2.0, via Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Madonna_Confessions_Tour_I.jpg",
+      "license": "CC BY 2.0",
+      "notes": "Downloaded 2026-11-01 as a 1600 px rendition from Wikimedia Commons; recompressed; no crop.",
+      "src": "images/photo-confessions-tour-2006.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "licensed",
+      "credit": "JD Urban, Madonna — Rebel Heart Tour, Philadelphia (24 September 2015), CC BY-SA 2.0, via Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Madonna_-_Rebel_Heart_Tour_(21847382128)_(cropped).jpg",
+      "license": "CC BY-SA 2.0",
+      "notes": "Downloaded 2026-11-01 as a 1600 px rendition of the cropped Commons file; recompressed.",
+      "src": "images/photo-rebel-heart-2015.jpg",
+      "used_as": [
+        "art"
+      ]
+    },
+    {
+      "kind": "licensed",
+      "credit": "David Parsons, Madonna performing on the Sticky & Sweet Tour, Boston (16 October 2008), CC BY-SA 2.0, via Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Madonna_Sticky_%26_Sweet_Tour_2008-8_(2948997796).jpg",
+      "license": "CC BY-SA 2.0",
+      "notes": "Downloaded 2026-11-01 as a 1600 px rendition from Wikimedia Commons; recompressed; no crop.",
+      "src": "images/photo-sticky-sweet-2008.jpg",
+      "used_as": [
+        "art"
+      ]
+    }
+  ],
+  "embeds": [
+    {
+      "provider": "youtube",
+      "id": "79fzeNUqQbQ",
+      "title": "Madonna - Like A Prayer (Official Video)",
+      "chapter": "overture",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "GsVcUzP_O_8",
+      "title": "Madonna - Express Yourself (Official Video)",
+      "chapter": "overture",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "6p-lDYPR2P8",
+      "title": "Madonna - Material Girl (Official Video) [HD]",
+      "chapter": "overture",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "GuJQSAiODqI",
+      "title": "Madonna - Vogue (Official Video)",
+      "chapter": "overture",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "XS088Opj9o0",
+      "title": "Madonna - Frozen (Official Video) [HD]",
+      "chapter": "overture",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "EDwb9jOVRtU",
+      "title": "Madonna - Hung Up (Official Video) [HD]",
+      "chapter": "overture",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "Zx83eVfP64A",
+      "title": "Madonna - I Feel So Free (Official Visualizer)",
+      "chapter": "overture",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "cOqr_x_9fMc",
+      "title": "Madonna - Everybody (Official Video) [HD]",
+      "chapter": "formation",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "ThHz9wlBeLU",
+      "title": "Madonna - Lucky Star (Official Video)",
+      "chapter": "formation",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "s__rX_WL100",
+      "title": "Madonna - Like A Virgin (Official Video)",
+      "chapter": "pop-command",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "IzAO9A9GjgI",
+      "title": "Madonna - Live To Tell (Official Video)",
+      "chapter": "pop-command",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "G333Is7VPOg",
+      "title": "Madonna - Papa Don't Preach (Official Video) [HD]",
+      "chapter": "pop-command",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "qvVvN0QvzTk",
+      "title": "Madonna - Oh Father [Official Music Video]",
+      "chapter": "like-a-prayer",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "R1Vm72XDljI",
+      "title": "Till Death Do Us Part",
+      "chapter": "like-a-prayer",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "WyhdvRWEWRw",
+      "title": "Madonna - Erotica (Official Video) [HD]",
+      "chapter": "erotica",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "15kWlTrpt5k",
+      "title": "Madonna - Rain (Official Video) [HD]",
+      "chapter": "erotica",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "EPHUZenprKc",
+      "title": "Madonna - Secret (Official Video) [HD]",
+      "chapter": "erotica",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "XDeiovnCv1o",
+      "title": "Madonna - Take A Bow (Official Video) [4K]",
+      "chapter": "erotica",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "lTLq2bIrndU",
+      "title": "Madonna - You Must Love Me (Official Video)",
+      "chapter": "ray-of-light",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "x3ov9USxVxY",
+      "title": "Madonna - Ray Of Light (Official Video) [HD]",
+      "chapter": "ray-of-light",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "6rsdGjNWiIw",
+      "title": "Madonna - Drowned World / Substitute For Love (Official Video)",
+      "chapter": "ray-of-light",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "Sdz2oW0NMFk",
+      "title": "Madonna - Music (Official Video)",
+      "chapter": "ray-of-light",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "uaNLvjCkYDE",
+      "title": "Madonna - Hollywood (Official Video) [4K]",
+      "chapter": "american-life",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "bZAMiK6ROZA",
+      "title": "Madonna - American Life - Director's Cut (Official Video) [4K]",
+      "chapter": "american-life",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "rdccTOcX7o4",
+      "title": "Madonna - Sorry (Official Video) [HD]",
+      "chapter": "american-life",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "Rx0mYN32Kps",
+      "title": "Madonna - Jump (Official Video) [HD]",
+      "chapter": "american-life",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "aAQZPBwz2CI",
+      "title": "Madonna - 4 Minutes feat. Justin Timberlake & Timbaland (Official Video) [4K]",
+      "chapter": "network-years",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "GgDxv0Qg_Rg",
+      "title": "Madonna - Ghosttown",
+      "chapter": "network-years",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "xAxNaLAR2to",
+      "title": "Madonna, Maluma - Medellín",
+      "chapter": "network-years",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "nU2eApGw_TU",
+      "title": "Madonna - Batuka",
+      "chapter": "network-years",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "5--rbMede8E",
+      "title": "Madonna - Fragile (Official Audio)",
+      "chapter": "confessions-ii",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "3Gi-XqXwciQ",
+      "title": "Madonna & Lola Leon - The Test (Official Audio)",
+      "chapter": "confessions-ii",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "saTgTt28l3c",
+      "title": "Madonna - L.E.S. Girl (Official Audio)",
+      "chapter": "confessions-ii",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "sJV29ZQIUhs",
+      "title": "Madonna - Deeper And Deeper (Official Video) [HD]",
+      "chapter": "body",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "cAVx9RKaLPU",
+      "title": "Madonna - Nothing Really Matters (Official Video) [HD]",
+      "chapter": "body",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "snsTmi9N9Gs",
+      "title": "Madonna - Open Your Heart (Official Video) [HD]",
+      "chapter": "identity",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "CSaFgAwnRSc",
+      "title": "Madonna - Bedtime Story (Official Video) [HD]",
+      "chapter": "identity",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "qYwgG2oyUbA",
+      "title": "Madonna - What It Feels Like For A Girl (Official Video) [HD]",
+      "chapter": "identity",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "5aZ0Xzzhufw",
+      "title": "Promise to Try",
+      "chapter": "time-absence",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "tEZ1oEc50gQ",
+      "title": "In This Life",
+      "chapter": "time-absence",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "52iW3lcpK5M",
+      "title": "Madonna - Into The Groove (Official Video)",
+      "chapter": "cinema",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "Np_Y740aReI",
+      "title": "Madonna - Justify My Love (Official Video) [HD]",
+      "chapter": "cinema",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "KD_1Z8iUDho",
+      "title": "Madonna - Don't Cry For Me Argentina (Official Video)",
+      "chapter": "cinema",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "rSaC-YbSDpo",
+      "title": "Madonna - Borderline (Official Video) [HD]",
+      "chapter": "downtown",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "XPL_qGqSJxA",
+      "title": "Madonna - Human Nature (Official Video)",
+      "chapter": "resilience",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "jAxqzaQpiU0",
+      "title": "Madonna - Living For Love (Live at The BRIT Awards 2015)",
+      "chapter": "resilience",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "6Uagw4zser8",
+      "title": "Madonna - Dark Ballet (Official Music Video)",
+      "chapter": "resilience",
+      "role": "music",
+      "relation": "direct"
+    },
+    {
+      "provider": "youtube",
+      "id": "gLFWRDsx5AI",
+      "title": "Madonna - Don't Tell Me (Official Video) [HD]",
+      "chapter": "lessons",
+      "role": "music",
+      "relation": "resonance"
+    },
+    {
+      "provider": "youtube",
+      "id": "yJtckcMHM2g",
+      "title": "Madonna - \"Confessions II - The Film\"",
+      "chapter": "deep-pattern",
+      "role": "video"
+    }
+  ]
+}
